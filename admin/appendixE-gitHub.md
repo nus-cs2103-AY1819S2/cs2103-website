@@ -45,7 +45,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
-2. Create a branch named after the week, `Wid` e.g. `W5`
+2. Create a branch named after the week, `WEEK_ID` e.g. `W5`
     ==Remember to switch to master branch before creating the new branch.==
     
 3. Commit your changes to that branch. Push to your fork.
@@ -55,11 +55,11 @@ More info about setting Git username is [here](https://help.github.com/articles/
    e.g. `{{module_org}}/addressbook-level2`
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
-   PR name should be: `[Wid][TEAM_ID]Your Name`  
+   PR name should be: `[WEEK_ID][TEAM_ID]Your Name`  
    e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, `[W5][W09-1]James Yong`.
    Your Team ID can be found in [this page]({{ team_IDs_page }}).
    Note that our tutorial IDs are different from those shown in CORS/LumiNUS. Our tutorial IDs are given in the panel below.
-   If you have more than on PR for a particular week, use [Wid-idx] as a prefix, e.g. `[W5-1][W09-1]James Yong`.
+   If you have more than on PR for a particular week, use `[WEEK_ID_idx]` as a prefix, e.g. `[W5-1][W09-1]James Yong`.
 <div class="indented-level2">
 {{ embed_topic("../admin/tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial Timetable", "apdxE-tutrialIds", "4") }}
 </div>
@@ -103,7 +103,7 @@ Only one team member:
 1. Ensure your team members have the desired level of access to your team repo.
 1. [**Enable Travis CI for the team repo**](https://github.com/nus-cs2103-AY1819S2/addressbook-level4/blob/master/docs/UsingTravis.adoc#setting-up-travis-ci).
 1. [**Set up _auto-publishing_ of docs**](https://github.com/nus-cs2103-AY1819S2/addressbook-level4/blob/master/docs/UsingTravis.adoc#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://{{ module | lower }}-{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ module | lower }}-{{ semester | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
-1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
+1. **Create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 All team members:
 
