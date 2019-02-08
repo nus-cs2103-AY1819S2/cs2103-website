@@ -5,8 +5,8 @@
       <li><a href="/cs2103-website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Jan 14] </span></a></li>
       <li><a href="/cs2103-website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Jan 21] </span></a></li>
       <li><a href="/cs2103-website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Jan 28] </span></a></li>
-      <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] <span class="fas fa-arrow-circle-left"></span></span></a></li>
-      <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
+      <li><a href="/cs2103-website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Feb 4] </span></a></li>
+      <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] <span class="fas fa-arrow-circle-left"></span></span></a></li>
       <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
       <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
       <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
@@ -101,13 +101,13 @@
       <p>More info about setting Git username is <a href="https://help.github.com/articles/setting-your-username-in-git/">here</a>.</p>
     </div>
     <div id="tutorial-pr-instructions">
-      <h2 id="submitting-pull-requests-as-evidence-of-an-lo">Submitting Pull Requests as evidence of an LO</h2>
+      <h2 id="submitting-pull-requests-as-evidence-of-a-topic">Submitting Pull Requests as evidence of a topic</h2>
       <ol>
         <li>
           <p>Fork the repo to your personal GitHub account, if you haven't done so already.</p>
         </li>
         <li>
-          <p>Create a branch named after the topic ID e.g. <code>W2.2b</code>
+          <p>Create a branch named after the week, <code>Wid</code> e.g. <code>W5</code>
             <mark>Remember to switch to master branch before creating the new branch.</mark></p>
         </li>
         <li>
@@ -119,10 +119,11 @@
             e.g. <code>https://github.com/nus-cs2103-AY1819S2/addressbook-level2</code>
             <mark>(do not create PRs against the upstream repo at <code>se-edu</code> org)</mark> <br>
             <img src="/cs2103-website/admin/images/PrDetails.png" width="700"><br>
-            PR name should be: <code>[LO_ID][TEAM_ID]Your Name</code><br>
-            e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, <code>[W2.2b][W09-1]James Yong</code>.
+            PR name should be: <code>[Wid][TEAM_ID]Your Name</code><br>
+            e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, <code>[W5][W09-1]James Yong</code>.
             Your Team ID can be found in <a href="https://docs.google.com/document/d/e/2PACX-1vSKAos19KW3DdEZ1SMiKVdLTSFj-oaZG-dyAtWwYx-GyZWizZ6O3ZEpaflNkDUkEHc3IabcOoX77W4L/pub?embedded=true">this page</a>.
-            Note that our tutorial IDs are different from those shown in CORS/LumiNUS. Our tutorial IDs are given in the panel below.</p>
+            Note that our tutorial IDs are different from those shown in CORS/LumiNUS. Our tutorial IDs are given in the panel below.
+            If you have more than on PR for a particular week, use [Wid-idx] as a prefix, e.g. <code>[W5-1][W09-1]James Yong</code>.</p>
         </li>
       </ol>
       <div class="indented-level2">
@@ -299,13 +300,13 @@
         <li><mark><strong>Rename</strong> the forked repo as <code>main</code></mark>. This repo (let's call it the <em>team repo</em>) is to be used as the repo for your project.</li>
         <li><mark>Ensure the issue tracker of your team repo is enabled.</mark> <span class="dimmed">Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.</span></li>
         <li>Ensure your team members have the desired level of access to your team repo.</li>
-        <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
-        <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available via the URL <code>https://nus-cs2103-ay1819s2-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s2-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
+        <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/blob/master/docs/UsingTravis.adoc#setting-up-travis-ci"><strong>Enable Travis CI for the team repo</strong></a>.</li>
+        <li><a href="https://nus-cs2103-ay1819s2.github.io/addressbook-level4/blob/master/docs/UsingTravis.adoc#enabling-auto-publishing-of-documentation"><strong>Set up <em>auto-publishing</em> of docs</strong></a>. When set up correctly, your project website should be available via the URL <code>https://cs2103-ay1819s2-{team-id}.github.io/main</code> e.g., <code>https://cs2103-ay1819s2-w13-1.github.io/main/</code>. This also requires you to <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages">enable the <em>GitHub Pages</em> feature of your team repo and configure it to serve the website from the <code>gh-pages</code> branch</a>.</li>
         <li><strong>create a <em>team PR</em></strong> for us to track your project progress: i.e., create a PR from your <mark>team repo <code>master</code> branch</mark> to [<a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4">nus-cs2103-AY1819S2/addressbook-level4</a>] <code>master</code> branch. PR name: <code>[Team ID] Product Name</code> e.g., <code>[T09-2] Contact List Pro</code>. <span class="dimmed"> As you merge code to your team repo's <code>master</code> branch, this PR will auto-update to reflect how much your team's product has progressed.</span> In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.</li>
       </ol>
       <p>All team members:</p>
       <ol>
-        <li><strong>Watch</strong>the <code>main</code> repo (created above) i.e., go to the repo and click on the <code>watch</code> button to subscribe to activities of the repo</li>
+        <li><strong>Watch</strong> the <code>main</code> repo (created above) i.e., go to the repo and click on the <code>watch</code> button to subscribe to activities of the repo</li>
         <li><strong>Fork</strong> the <code>main</code> repo to your personal GitHub account.</li>
         <li><strong>Clone</strong> the fork to your Computer.</li>
         <li>Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).</li>
