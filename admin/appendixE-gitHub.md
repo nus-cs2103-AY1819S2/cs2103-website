@@ -59,7 +59,7 @@ More info about setting Git username is [here](https://help.github.com/articles/
    e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, `[W5][W09-1]James Yong`.
    Your Team ID can be found in [this page]({{ team_IDs_page }}).
    Note that our tutorial IDs are different from those shown in CORS/LumiNUS. Our tutorial IDs are given in the panel below.
-   If you have more than on PR for a particular week, use `[WEEK_ID_idx]` as a prefix, e.g. `[W5-1][W09-1]James Yong`.
+   If you have more than one PR for a particular week, use `[WEEK_ID.idx]` as a prefix, e.g. `[W5.1][W09-1]James Yong`.
 <div class="indented-level2">
 {{ embed_topic("../admin/tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial Timetable", "apdxE-tutrialIds", "4") }}
 </div>
