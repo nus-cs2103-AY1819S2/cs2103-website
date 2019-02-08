@@ -41,11 +41,11 @@ More info about setting Git username is [here](https://help.github.com/articles/
 </div>
 <div id="tutorial-pr-instructions">
 
-## Submitting Pull Requests as evidence of an LO
+## Submitting Pull Requests as evidence of a topic
 
 1. Fork the repo to your personal GitHub account, if you haven't done so already.
 
-2. Create a branch named after the topic ID e.g. `W2.2b`
+2. Create a branch named after the week, `Wid` e.g. `W5`
     ==Remember to switch to master branch before creating the new branch.==
     
 3. Commit your changes to that branch. Push to your fork.
@@ -55,11 +55,11 @@ More info about setting Git username is [here](https://help.github.com/articles/
    e.g. `{{module_org}}/addressbook-level2`
    ==(do not create PRs against the upstream repo at `se-edu` org)== <br/> 
    <img src="{{baseUrl}}/admin/images/PrDetails.png" width="700" /><br/>
-   PR name should be: `[LO_ID][TEAM_ID]Your Name`  
-   e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, `[W2.2b][W09-1]James Yong`.
+   PR name should be: `[Wid][TEAM_ID]Your Name`  
+   e.g. If you are in tutorial W09 (i.e. Wednesday 9am) and team 1, `[W5][W09-1]James Yong`.
    Your Team ID can be found in [this page]({{ team_IDs_page }}).
    Note that our tutorial IDs are different from those shown in CORS/LumiNUS. Our tutorial IDs are given in the panel below.
-
+   If you have more than on PR for a particular week, use [Wid-idx] as a prefix, e.g. `[W5-1][W09-1]James Yong`.
 <div class="indented-level2">
 {{ embed_topic("../admin/tutorials.md#tutorialTimetable", "Admin " + icon_embedding + " Tutorials → Tutorial Timetable", "apdxE-tutrialIds", "4") }}
 </div>
@@ -102,12 +102,12 @@ Only one team member:
 1. ==Ensure the issue tracker of your team repo is enabled.== %%Reason: our bots will be posting your weekly progress reports on the issue tracker of your team repo.%%
 1. Ensure your team members have the desired level of access to your team repo.
 1. [**Enable Travis CI for the team repo**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#setting-up-travis-ci).
-1. [**Set up _auto-publishing_ of docs**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://nus-{{ module | lower }}-{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ module | lower }}-{{ semester | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
+1. [**Set up _auto-publishing_ of docs**](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/UsingTravis.html#enabling-auto-publishing-of-documentation). When set up correctly, your project website should be available via the URL  `https://{{ module | lower }}-{{ semester | lower }}-{team-id}.github.io/main` e.g., `https://{{ module | lower }}-{{ semester | lower }}-w13-1.github.io/main/`. This also requires you to [enable the _GitHub Pages_ feature of your team repo and configure it to serve the website from the `gh-pages` branch](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages).
 1. **create a _team PR_** for us to track your project progress: i.e., create a PR from your ==team repo `master` branch== to [[nus-{{ module | lower }}-{{ semester }}/addressbook-level4]({{module_org}}/addressbook-level4)] `master` branch. PR name: `[Team ID] Product Name` e.g., `[T09-2] Contact List Pro`. %%&nbsp;As you merge code to your team repo's `master` branch, this PR will auto-update to reflect how much your team's product has progressed.%% In the PR description <tooltip content="use @githubUserName">@mention</tooltip> the other team members so that they get notified when the tutor adds comments to the PR.
 
 All team members:
 
-1. **Watch**the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
+1. **Watch** the `main` repo (created above) i.e., go to the repo and click on the `watch` button to subscribe to activities of the repo
 1. **Fork** the `main` repo to your personal GitHub account.
 1. **Clone** the fork to your Computer.
 1. Recommended: Set it up as an Intellij project (follow the instructions in the Developer Guide carefully).

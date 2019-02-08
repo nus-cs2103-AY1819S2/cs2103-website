@@ -1,13 +1,10 @@
 **Come prepared for the tutorial**:
 
-* This week's tutorial involves discussing some theory questions. There are 5 questions (listed under Tutorial 8 in the [schedule page](https://nus-cs2103-ay1819s1.github.io/cs2103-website/index.html)). **Please divide the questions among yourselves and come prepared to answer them during the tutorial.** We will not be able to finish all five questions during the tutorial unless you come prepared.
+* This week's tutorial involves discussing some theory questions. There are 5 questions (listed under Tutorial 8 in the [schedule page]({{ module_website }}). **Please divide the questions among yourselves and come prepared to answer them during the tutorial.** We will not be able to finish all five questions during the tutorial unless you come prepared.
 
 
 **Feedback for peers, teaching team**
 
-* **Peer Evaluation Round 1** will open on TEAMMATES. You will receive the submission link soon. **If you do not submit feedback responses, you will forfeit participation marks that you earned based on feedback ratings received from others**.
-
-* **An anonymous survey to submit feedback about the teaching team** is now open on LumiNUS. Please take a few minutes to give feedback to your tutors. As usual, you can use the 'anonymous feedback' feature of LumiNUS to send us feedback any time.
 
 **Project**
 
