@@ -51,20 +51,30 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 * Update User Guide, README, and About Us pages as described earlier in <trigger trigger="click" for="modal:v11docs-midv11">mid-v1.1 progress guide</trigger>. 
 
-  **Submission**: merge your changes to the master branch of your repo.
-
 <modal large title="Admin {{ icon_embedding }} Project: mid-v1.1" id="modal:v11docs-midv11">
   <include src="project-w06-mid-v11.md#body"/>
 </modal>
 
-Tutors will provide feedback on this version of the UG. This feedback should be used to improve your final submission. 
+* Update Developer Guide page with user stories and use cases.  Refer to <trigger trigger="click" for="modal:v10docs-midv10">mid-v1.0.
+
+  **Submission**: Merge your changes to the master branch of your repo. 
+  Create a PR with your changes.
+  
+<modal large title="Admin {{ icon_embedding }} Project: mid-v1.0" id="modal:v10docs-midv10">
+  <include src="project-w04-mid-v10.md#body"/>
+</modal>
+
+  
+
+
+Tutors will provide feedback on this version of the UG and DG. This feedback should be used to improve your final submission. 
 
 </div>
 <div id="product">
 
 ### v1.1 Product
 
-* Each member should try to add some enhancements that are in line with the vision for v2.0. After adding some _local-impact_ changes as recommended in <trigger trigger="click" for="modal:v11docs-midv11">mid-v1.1 progress guide</trigger>, attempt to do some ==<tooltip content="should go beyond the component you are in charge of">_global-impact_</tooltip> enhancements==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#creating-a-new-command-code-remark-code).
+* Each member should try to add some enhancements that are in line with the vision for v2.0. After adding some _local-impact_ changes as recommended in <trigger trigger="click" for="modal:v11docs-midv11">mid-v1.1 progress guide</trigger>, attempt to do some ==<tooltip content="should go beyond the component you are in charge of">_global-impact_</tooltip> enhancements==, touching as many other components as possible. Refer to the AddressBook-Level4 Developer Guide has [some guidance on how to implement a new feature end-to-end](https://nus-{{ module | lower }}-{{ semester | lower }}.github.io/addressbook-level4/DeveloperGuide.html#GetStartedProgramming-RemarkCommand).
 
 </div>
 
