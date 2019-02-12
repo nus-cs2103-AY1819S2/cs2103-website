@@ -2340,7 +2340,7 @@ Person of name James Cook
               <p><strong>Suggested length</strong>: Follow the existing user guide and developer guides in terms of the level of details.</p>
               <p><mark>
                   <font color="red"><big><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span></big></font> <strong>Submission</strong>
-                </mark>: Save your draft as a single pdf file, name it <code>{Your Team ID}.pdf</code> <span class="dimmed">e.g., <code>W09-3.pdf</code></span> and upload to LumiNUS.</p>
+                </mark>: Save your draft as a single pdf file, name it <code>{Your Team ID}.pdf</code> <span class="dimmed">e.g., <code>W09-3.pdf</code></span> and upload to LumiNUS. Only one PDF per team should be uploaded.</p>
               <h3 id="v1.0-project-management">v1.0 Project Management<a class="fa fa-anchor" href="#v1.0-project-management"></a></h3>
               <ul>
                 <li>
@@ -2408,6 +2408,90 @@ Person of name James Cook
                   <p>After step 2, the diagram should be like this:</p>
                   <img src="/cs2103-website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600">
                 </div>
+              </question>
+            </panel>
+          </div>
+          <div>
+            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Explain notations in the class diagram">
+              <question>
+                <p>Explain the meaning of various class diagram notations in the following class diagram:</p>
+                <img src="/cs2103-website/book/uml/classDiagrams/introduction/what/images/classDiagramExample1.png" width="750">
+              </question>
+            </panel>
+          </div>
+          <div>
+            <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Draw a Class Diagram for Item etc.">
+              <question>
+                <p>Consider the code below:</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>
+         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{
+    <span class="hljs-keyword">private</span> Review review;
+    <span class="hljs-keyword">private</span> String name;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(
+        String name, Rating rating)</span></span>{
+
+        <span class="hljs-keyword">this</span>.name = name;
+        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-comment">//...</span>
+    }
+}
+</code></pre>
+                  </div>
+                  <div class="col-sm-6">
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {
+    GOOD, OK, POOR
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{
+        <span class="hljs-keyword">this</span>.rating = rating;
+    }
+}
+</code></pre>
+                    <pre><code class="hljs java"><span class="hljs-keyword">import</span> java.util.List;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{
+    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{
+        <span class="hljs-keyword">return</span> items.size();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{
+        <span class="hljs-comment">// ...</span>
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{
+        items.add(s);
+    }
+}
+</code></pre>
+                  </div>
+                </div>
+                <p>(a) Draw a class diagram to represent the code<br>
+                  (b) Draw an object diagram to represent the situation where the inventory has one item with a name <code>spanner</code> and a review of <code>POOR</code> rating.</p>
               </question>
             </panel>
           </div>
@@ -2483,7 +2567,7 @@ Person of name James Cook
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Mon, 11 Feb 2019 11:36:01 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Tue, 12 Feb 2019 09:13:17 GMT</small></div>
 </footer>
 </div>
 </body>
