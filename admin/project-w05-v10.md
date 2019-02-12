@@ -47,7 +47,7 @@ Milestone | Minimum acceptable performance to consider as 'reached'
 
 **Suggested length**: Follow the existing user guide and developer guides in terms of the level of details.
 
-=={{ icon_important_big_red }} **Submission**==: Save your draft as a single pdf file, name it `{Your Team ID}.pdf` %%e.g., `W09-3.pdf`%% and upload to LumiNUS.
+=={{ icon_important_big_red }} **Submission**==: Save your draft as a single pdf file, name it `{Your Team ID}.pdf` %%e.g., `W09-3.pdf`%% and upload to LumiNUS. Only one PDF per team should be uploaded.
 
 ### v1.0 Project Management
 
