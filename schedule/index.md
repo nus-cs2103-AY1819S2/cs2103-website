@@ -23,7 +23,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["5", "6"] %}
+{% set current_weeks = ["7", "8"] %}
 
 
 {% set all_outcomes = [
@@ -247,7 +247,14 @@ head: scheduleHead.md
     {heading: "Java: streams"},
           {location: ["javaTools", "streamsBasic"]},
 {week: "7"},
+  {name: "Implementation"},
+    {heading: "Association Classes"},
+        {location: ["oop", "associations", "associationClasses"]},
   {name: "Design"},
+    {heading: "Sequence Diagrams: Intermediate-Level"},
+      {location: ["modeling", "modelingBehaviors", "sequenceDiagramsIntermediate"]},
+      {location: ["uml", "sequenceDiagrams", "referenceFrames"], omit_evidence: true},
+      {location: ["uml", "sequenceDiagrams", "parallelPaths"], omit_evidence: true},
     {heading: "Architectural Styles"},
       {location: ["architecture", "architecturalStyles", "introduction", "what"], omit_evidence: true},
       {location: ["architecture", "architecturalStyles", "nTier", "what"], omit_evidence: true},
@@ -259,10 +266,6 @@ head: scheduleHead.md
       {location: ["architecture", "architecturalStyles", "more", "usingStyles"]},
     {heading: "APIs"},
       {location: ["reuse", "apis", "what"]},
-    {heading: "Sequence Diagrams: Intermediate-Level"},
-      {location: ["modeling", "modelingBehaviors", "sequenceDiagramsIntermediate"]},
-      {location: ["uml", "sequenceDiagrams", "referenceFrames"], omit_evidence: true},
-      {location: ["uml", "sequenceDiagrams", "parallelPaths"], omit_evidence: true},
   {name: "Project Management"},
       {heading: "Project Mgt: Scheduling and Tracking"},
         {location: ["projectPlanning", "milestones"]},
@@ -293,8 +296,6 @@ head: scheduleHead.md
       {location: ["integration", "approaches", "lateVsEarly"], omit_evidence: true},
       {location: ["integration", "approaches", "bigBangVsIncremental"], omit_evidence: true},
       {location: ["integration", "approaches", "topDownVsBottomUp"], omit_evidence: true},
-    {heading: "Association Classes"},
-      {location: ["oop", "associations", "associationClasses"]},
   {name: "Quality Assurance"},
     {heading: "Types of Testing"},
       {subheading: "Unit Testing"},
