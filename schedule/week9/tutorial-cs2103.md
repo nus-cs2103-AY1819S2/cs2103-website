@@ -40,3 +40,4 @@ Divide these five questions among team members. Be prepared to answer questions 
    <img src="{{baseUrl}}/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190" /><br>
 
 
+<include src="../../book/combined/exercises/reviewCliAppCode.md" /><p/>
