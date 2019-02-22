@@ -39,5 +39,5 @@ Divide these five questions among team members. Be prepared to answer questions 
 1. What’s the problem with the architecture diagram on the right?<br>
    <img src="{{baseUrl}}/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190" /><br>
 
-
+**Q6**
 <include src="../../book/combined/exercises/reviewCliAppCode.md" /><p/>
