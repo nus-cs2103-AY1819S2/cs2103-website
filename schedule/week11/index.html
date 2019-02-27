@@ -88,20 +88,15 @@
             <div id="main">
               <div class="indented">
                 <ul>
-                  <li>
-                    <p><a href="#W11-1">[W11.1] Design Patterns: Intermediate-Level <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></p>
-                  </li>
-                  <li>
-                    <p><a href="#W11-2">[W11.2] Other UML Models <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></p>
-                  </li>
+                  <li><a href="#W11-1">[W11.1] SDLC Process Models <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
                 </ul>
                 <p></p>
                 <ul>
-                  <li><a href="#W11-3">[W11.3] Combining Multiple Test Inputs <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
+                  <li><a href="#W11-2">[W11.2] Reuse: Frameworks, Libraries, Platforms <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></a></li>
                 </ul>
                 <p></p>
                 <ul>
-                  <li><a href="#W11-4">[W11.4] SDLC Process Models <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></a></li>
+                  <li><a href="#W11-3">[W11.3] Tips &amp; tricks for demo <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></span></a></li>
                 </ul>
                 <p></p>
               </div>
@@ -110,1727 +105,12 @@
               <panel type="seamless" no-close="" expandable="true" expanded="">
                 <span slot="header" class="card-title">
                   <div>
-                    <p><big> <span class="dimmed">[W11.1]</span> <big><big><strong>Design Patterns: Intermediate-Level</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
+                    <p><big> <span class="dimmed">[W11.1]</span> <big><big><strong>SDLC Process Models</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
                   </div>
                 </span>
                 <div class="indented-level1">
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1a]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns → MVC Pattern →
-                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the Model View Controller (MVC) design pattern</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Context</strong></p>
-                          <p>Most applications support storage/retrieval of information, displaying of information to the user (often via multiple UIs having different formats), and changing stored information based on external inputs.</p>
-                          <p><strong>Problem</strong></p>
-                          <p>The high coupling that can result from the interlinked nature of the features described above.</p>
-                          <p><strong>Solution</strong></p>
-                          <p>Decouple data, presentation, and control logic of an application by separating them into three different components: <em>Model</em>, <em>View</em> and <em>Controller</em>.</p>
-                          <ul>
-                            <li><em>View</em>: Displays data, interacts with the user, and pulls data from the model if necessary.</li>
-                            <li><em>Controller</em>: Detects UI events such as mouse clicks, button pushes and takes follow up action. Updates/changes the model/view when necessary.</li>
-                            <li><em>Model</em>: Stores and maintains data. Updates views if necessary.</li>
-                          </ul>
-                          <p>The relationship between the components can be observed in the diagram below. Typically, the UI is the combination of view and controller.</p>
-                          <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/classDiagram.png" width="400">
-                          <p></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Given below is a concrete example of MVC applied to a student management system. In this scenario, the user is retrieving data of one student.</p>
-                            <img src="/cs2103-website/book/designPatterns/modelViewController/what/images/sequenceDiagram.png" width="500">
-                            <p></p>
-                            <p>In the diagram above, when the user clicks on a button using the UI, the ‘click’ event is caught and handled by the <code>UiController</code>. The <code>ref</code> frame indicates that the interactions within that frame have been extracted out to another separate sequence diagram.</p>
-                          </tip-box>
-                          <p>Note that in a simple UI where there’s only one view, Controller and View can be combined as one class.</p>
-                          <p>There are many variations of the MVC model used in different domains. For example, the one used in a desktop GUI could be different from the one used in a Web application.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1b]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns → Observer Pattern →
-                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the Observer design pattern</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Context</strong></p>
-                          <p>An object (possibly, more than one) is interested to get notified when a change happens to another object. That is, some objects want to ‘observe’ another object.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Consider this scenario from the a student management system where the user is adding a new student to the system.</p>
-                            <img src="/cs2103-website/book/designPatterns/observer/what/images/sequenceDiagram.png" height="330">
-                            <p></p>
-                            <p>Now, assume the system has two additional views used in parallel by different users:</p>
-                            <ul>
-                              <li><code>StudentListUi</code>: that accesses a list of students and</li>
-                              <li><code>StudentStatsUi</code>: that generates statistics of current students.</li>
-                            </ul>
-                            <p>When a student is added to the database using <code>NewStudentUi</code> shown above, both <code>StudentListUi</code> and <code>StudentStatsUi</code> should get updated automatically, as shown below.</p>
-                            <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListUI.png" height="180">
-                            <p></p>
-                            <p>However, the <code>StudentList</code> object has no knowledge about <code>StudentListUi</code> and <code>StudentStatsUi</code> (note the direction of the navigability) and has no way to inform those objects. This is an example of the type of problem addressed by the Observer pattern.</p>
-                          </tip-box>
-                          <p><strong>Problem</strong></p>
-                          <p>The ‘observed’ object does not want to be coupled to objects that are ‘observing’ it.</p>
-                          <p><strong>Solution</strong></p>
-                          <p>Force the communication through an interface known to both parties.</p>
-                          <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListObserver.png" height="160">
-                          <p></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Here is the Observer pattern applied to the student management system.</p>
-                            <p><strong>During the initialization of the system,</strong></p>
-                            <ol>
-                              <li>
-                                <p>First, create the relevant objects.</p>
-                                <pre><code class="hljs java">StudentList studentList = <span class="hljs-keyword">new</span> StudentList();
-StudentListUi listUi = <span class="hljs-keyword">new</span> StudentListUi();
-StudentStatusUi statusUi = <span class="hljs-keyword">new</span> StudentStatsUi();
-</code></pre>
-                              </li>
-                              <li>
-                                <p>Next, the two UIs indicate to the <code>StudentList</code> that they are interested in being updated whenever <code>StudentList</code> changes. This is also known as ‘subscribing for updates’.</p>
-                                <pre><code class="hljs java">studentList.addUi(listUi);
-studentList.addUi(statusUi);
-</code></pre>
-                              </li>
-                              <li>
-                                <p>Within the <code>addUi</code> operation of <code>StudentList</code>, all Observer objects subscribers are added to an internal data structure called <code>observerList</code>.</p>
-                                <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addUi</span><span class="hljs-params">(Observer o)</span> </span>{
-    observerList.add(o);
-}
-</code></pre>
-                              </li>
-                            </ol>
-                            <p><strong>Now, whenever the data in <code>StudentList</code> changes</strong> (e.g. when a new student is added to the <code>StudentList</code>),</p>
-                            <ol>
-                              <li>
-                                <p>All interested observers are updated by calling the <code>notifyUIs</code> operation.</p>
-                                <pre><code class="hljs java"><span class="hljs-comment">//StudentList class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">notifyUIs</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//for each observer in the list</span>
-    <span class="hljs-keyword">for</span>(Observer o: observerList){
-        o.update();
-    }
-}
-</code></pre>
-                              </li>
-                              <li>
-                                <p>UIs can then pull data from the <code>StudentList</code> whenever the <code>update</code> operation is called.</p>
-                                <pre><code class="hljs java"><span class="hljs-comment">//StudentListUI class</span>
-<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">update</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//refresh UI by pulling data from StudentList</span>
-}
-</code></pre>
-                                <p>Note that <code>StudentList</code> is unaware of the exact nature of the two UIs but still manages to communicate with them via an intermediary.</p>
-                              </li>
-                            </ol>
-                          </tip-box>
-                          <p>Here is the generic description of the observer pattern:</p>
-                          <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceDiagram.png" height="100">
-                          <p></p>
-                          <ul>
-                            <li><code>&lt;&lt;Observer&gt;&gt;</code> is an interface: any class that implements it can observe an <code>&lt;&lt;Observable&gt;&gt;</code>. Any number of <code>&lt;&lt;Observer&gt;&gt;</code> objects can observe (i.e. listen to changes of) the <code>&lt;&lt;Observable&gt;&gt;</code> object.</li>
-                            <li>The <code>&lt;&lt;Observable&gt;&gt;</code> maintains a list of <code>&lt;&lt;Observer&gt;&gt;</code> objects. <code>addObserver(Observer)</code> operation adds a new <code>&lt;&lt;Observer&gt;&gt;</code> to the list of <code>&lt;&lt;Observer&gt;&gt;s</code>.</li>
-                            <li>Whenever there is a change in the <code>&lt;&lt;Observable&gt;&gt;</code>, the <code>notifyObservers()</code> operation is called that will call the <code>update()</code> operation of all <code>&lt;&lt;Observer&gt;&gt;s</code> in the list.</li>
-                          </ul>
-                          <box>
-                            <p><span class="fas fa-cube"></span> In a GUI application, how is the Controller notified when the “save” button is clicked? UI frameworks such as JavaFX has inbuilt support for the Observer pattern.</p>
-                          </box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> polymorphism and Observer pattern.">
-                                  <question has-input="true">
-                                    <p>Explain how polymorphism is used in the Observer pattern.</p>
-                                    <div slot="answer">
-                                      <img src="/cs2103-website/book/designPatterns/observer/what/images/observableInterfaceNotation.png" height="90">
-                                      <p></p>
-                                      <p>With respect to the general form of the Observer pattern given above, when the Observable object invokes the <code>notifyObservers()</code> method, it is treating all <code>ConcreteObserver</code> objects as a general type called <code>Observer</code> and calling the <code>update()</code> method of each of them. However, the <code>update()</code> method of each <code>ConcreteObserver</code> could potentially show different behavior based on its actual type. That is, <code>update()</code> method shows polymorphic behavior.</p>
-                                      <p>In the example given below, the <code>notifyUIs</code> operation can result in <code>StudentListUi</code> and <code>StudentStatsUi</code> changing their views in two different ways.</p>
-                                      <img src="/cs2103-website/book/designPatterns/observer/what/images/studentListStudentListObserver.png" height="190">
-                                      <p></p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Observer patter usage">
-                                  <question>
-                                    <p>The Observer pattern can be used when we want one object to initiate an activity in another object without having a direct dependency from the first object to the second object.</p>
-                                    <ul radio-group="caf40" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> True</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="caf40" type="radio"> False</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>True</p>
-                                      <p>Explanation: Yes. For example, when applying the Observer pattern to an MVC structure, Views can get notified and update themselves about a change to the Model without the Model having to depend on the Views.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1c]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns →
-                            </span></strong></span> <strong><big><big><span>Other Design Patterns</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can recognize some of the GoF design patterns</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>The most famous source of design patterns is the <a href="https://en.wikipedia.org/wiki/Design_Patterns">&quot;Gang of Four&quot; (GoF) book</a> which contains 23 design patterns divided into three categories</strong>:</p>
-                          <ul>
-                            <li><strong>Creational</strong>: About object creation. They separate the operation of an application from how its objects are created.
-                              <ul>
-                                <li>Abstract Factory, Builder, Factory Method, Prototype, Singleton</li>
-                              </ul>
-                            </li>
-                            <li><strong>Structural</strong>: About the composition of objects into larger structures while catering for future extension in structure.
-                              <ul>
-                                <li>Adapter, Bridge, Composite, Decorator, Façade, Flyweight, Proxy</li>
-                              </ul>
-                            </li>
-                            <li><strong>Behavioral</strong>: Defining how objects interact and how responsibility is distributed among them.
-                              <ul>
-                                <li>Chain of Responsibility, Command, Interpreter, Template Method, Iterator, Mediator, Memento, Observer, State, Strategy, Visitor</li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1d]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns →
-                            </span></strong></span> <strong><big><big><span>Combining Design Patterns</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can combine multiple patterns to fit a context</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Design patterns are usually embedded in a larger design and sometimes applied in combination with other design patterns.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Let us look at a case study that shows how design patterns are used in the design of a class structure for a Stock Inventory System (SIS) for a shop. The shop sells appliances, and accessories for the appliances. SIS simply stores information about each item in the store.</p>
-                            <p><strong>Use Cases</strong>:</p>
-                            <ul>
-                              <li>Create a new item</li>
-                              <li>View information about an item</li>
-                              <li>Modify information about an item</li>
-                              <li>View all available accessories for a given appliance</li>
-                              <li>List all items in the store</li>
-                            </ul>
-                            <p>SIS can be accessed using multiple terminals. Shop assistants use their own terminals to access SIS, while the shop manager’s terminal continuously displays a list of all items in store. In the future, it is expected that suppliers of items use their own applications to connect to SIS to get real-time information about current stock status. User authentication is not required for the current version, but may be required in the future.</p>
-                            <p>A step by step explanation of the design is given below. Note that this is one out of many possible designs. Design patterns are also applied where appropriate.</p>
-                            <p>A <code>StockItem</code> can be an Appliance or an Accessory.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItem.png" height="100">
-                            <p></p>
-                            <p>To track that each <code>Accessory</code> is associated with the correct <code>Appliance</code>, consider the following alternative class structures.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeOne.png" height="120">
-                            <p></p>
-                            <p>The third one seems more appropriate (the second one is suitable if accessories can have accessories). Next, consider between keeping a list of <code>Appliances</code>, and a list of <code>StockItems</code>. Which is more appropriate?</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeTwo.png" height="100">
-                            <p></p>
-                            <p>The latter seems more suitable because it can handle both appliances and accessories the same way. Next, an abstraction occurrence pattern is applied to keep track of <code>StockItems</code>.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/alternativeThree.png" height="100">
-                            <p></p>
-                            <p>Note the inclusion of navigabilities. Here’s a sample object diagram based on the class model created thus far.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/stockItemListObjectDiagram.png" height="150">
-                            <p></p>
-                            <p>Next, apply the façade pattern to shield the SIS internals from the UI.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withFacade.png" height="200">
-                            <p></p>
-                            <p>As UI consists of multiple views, the MVC pattern is applied here.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withMVC.png" height="270">
-                            <p></p>
-                            <p>Some views need to be updated when the data change; apply the Observer pattern here.</p>
-                            <img src="/cs2103-website/book/designPatterns/more/combiningDesignPatterns/images/withObserver.png" height="270">
-                            <p></p>
-                            <p>In addition, the Singleton pattern can be applied to the façade class.</p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1e]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns →
-                            </span></strong></span> <strong><big><big><span>Using Design Patterns</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain pros and cons of design patterns</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Design pattern provides a high-level vocabulary to talk about design.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Someone can say 'apply Observer pattern here' instead of having to describe the mechanics of the solution in detail.</p>
-                          </tip-box>
-                          <p><strong>Knowing more patterns is a way to become more ‘experienced’.</strong> Aim to learn at least the context and the problem of patterns <span class="dimmed"> so that when you encounter those problems you know where to look for a solution</span>.</p>
-                          <p><strong>Some patterns are domain-specific</strong> <span class="dimmed"> e.g. patterns for distributed applications</span>, <strong>some are created in-house</strong> <span class="dimmed"> e.g. patterns in the company/project</span> and <strong>some can be self-created</strong> <span class="dimmed"> e.g. from past experience</span>.</p>
-                          <p><strong>Be careful not to overuse patterns.</strong> Do not throw patterns at a problem at every opportunity. Patterns come with overhead such as adding more classes or increasing the levels of abstraction. Use them only when they are needed. Before applying a pattern, make sure that:</p>
-                          <ul>
-                            <li>there is substantial improvement in the design, not just superficial.</li>
-                            <li>the associated tradeoffs are carefully considered. There are times when a design pattern is not appropriate (or an overkill).</li>
-                          </ul>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1f]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns →
-                            </span></strong></span> <strong><big><big><span>Design Patterns vs Design Principles</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can differentiate between design patterns and principles</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>Design <em>principles</em> have varying degrees of formality – rules, opinions, rules of thumb, observations, and axioms.</strong> Compared to design patterns, principles are <strong>more general</strong>, have <strong>wider applicability</strong>, with correspondingly <strong>greater overlap</strong> among them.</p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1g]</span></span> <span class="dimmed"><strong><span>Design → Design Patterns →
-                            </span></strong></span> <strong><big><big><span>Other Types of Patterns</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain how patterns exist beyond software design domain</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>The notion of capturing design ideas as &quot;patterns&quot; is usually attributed to <a href="https://en.wikipedia.org/wiki/Christopher_Alexander">Christopher Alexander</a>. He is a building architect noted for his theories about design. His book <em>Timeless way of building</em> talks about &quot;design patterns&quot; for constructing buildings.</p>
-                          <p>Here is a sample pattern from that book:</p>
-                          <blockquote>
-                            <p>When a room has a window with a view, the window becomes a focal point: people are attracted to the window and want to look through it. The furniture in the room creates a second focal point:
-                              everyone is attracted toward whatever point the furniture aims them at (usually the center of the room or a TV). This makes people feel uncomfortable. They want to look out the window,
-                              and toward the other focus at the same time. If you rearrange the furniture, so that its focal point becomes the window, then everyone will suddenly notice that the
-                              room is much more “comfortable”</p>
-                          </blockquote>
-                          <p>Apparently, patterns and anti-patterns are found in the field of building architecture. This is because they are general concepts applicable to any domain, not just software design. In software engineering, there are many general types of patterns: Analysis patterns, Design patterns, Testing patterns, Architectural patterns, Project management patterns, and so on.</p>
-                          <p>In fact, the abstraction occurrence pattern is more of an analysis pattern than a design pattern, while MVC is more of an architectural pattern.</p>
-                          <p>New patterns can be created too. If a common problem needs to be solved frequently that leads to a non-obvious and better solution, it can be formulated as a pattern so that it can be reused by others. However, don’t reinvent the wheel; the pattern might already exist.</p>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Give a pattern from another domain">
-                                  <question has-input="true">
-                                    <p>Here are some common elements of a design pattern: Name, Context, Problem, Solution, Anti-patterns (optional), Consequences (optional), other useful information (optional).</p>
-                                    <p>Using similar elements, describe a pattern that is not a design pattern. It must be a pattern you have noticed, not a pattern already documented by others. You may also give a pattern not related to software.</p>
-                                    <p>Some examples:</p>
-                                    <ul>
-                                      <li>A pattern for testing textual UIs.</li>
-                                      <li>A pattern for striking a good bargain at a mall such as Sim-Lim Square.</li>
-                                    </ul>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p><span id="W11-2"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W11.2]</span> <big><big><strong>Other UML Models</strong></big></big></big> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2a]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
-                            </span></strong></span> <strong><big><big><span>Deployment Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain deployment diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>deployment diagram</em> shows a system's physical layout, revealing which pieces of software run on which pieces of hardware.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> An example deployment diagram:</p>
-                            <img src="/cs2103-website/book/modeling/modelingStructures/deploymentDiagrams/images/diagram.png" height="500">
-                            <p></p>
-                            <p><sub>source:<a href="https://en.wikipedia.org/wiki/Deployment_diagram">https://commons.wikimedia.org</a></sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2b]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
-                            </span></strong></span> <strong><big><big><span>Component Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain component diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>component diagram</em> is used to show how a system is divided into components and how they are connected to each other through interfaces.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> An example component diagram:</p>
-                            <p><img src="/cs2103-website/book/modeling/modelingStructures/componentDiagrams/images/diagram.png" height="500"><br></p>
-                            <p><sub>source:<a href="https://en.wikipedia.org/wiki/Component_diagram">https://commons.wikimedia.org</a></sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2c]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
-                            </span></strong></span> <strong><big><big><span>Package Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain package diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>package diagram</em> shows packages and their dependencies.</strong> A package is a grouping construct for grouping UML elements (classes, use cases, etc.).</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Here is an example package diagram:</p>
-                            <p><img src="/cs2103-website/book/modeling/modelingStructures/packageDiagrams/images/diagram.png" height="450"><br>
-                              <sub>source:<a href="https://en.wikipedia.org/wiki/Package_diagram">https://commons.wikimedia.org</a></sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2d]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Structure
-                            </span></strong></span> <strong><big><big><span>Composite Structure Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain composite structure diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>composite structure diagram</em> hierarchically decomposes a class into its internal structure.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Here is an example composite structure diagram:</p>
-                            <img src="/cs2103-website/book/modeling/modelingStructures/compositeStructureDiagrams/images/diagram.png" height="150">
-                            <br>
-                            <p><sub>source:<a href="https://en.wikipedia.org/wiki/Composite_structure_diagram">https://commons.wikimedia.org</a></sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2e]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                            </span></strong></span> <strong><big><big><span>Timing Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain timing diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>timing diagram</em> focus on timing constraints.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Here is an example timing diagram:</p>
-                            <img src="/cs2103-website/book/modeling/modelingBehaviors/timingDiagrams/images/diagram.png" height="280">
-                            <br>
-                            <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2f]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                            </span></strong></span> <strong><big><big><span>Interaction Overview Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain interaction overview diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>An <em>Interaction overview</em> diagrams is a combination of activity diagrams and sequence diagrams</strong>.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> An example:</p>
-                            <img src="/cs2103-website/book/modeling/modelingBehaviors/interactionOverviewDiagrams/images/diagram.png" height="420">
-                            <p></p>
-                            <p><sub>source:<a href="https://en.wikipedia.org/wiki/Interaction_overview_diagram">https://commons.wikimedia.org</a></sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2g]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                            </span></strong></span> <strong><big><big><span>Communication Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain communication diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>Communication diagrams</em> are like sequence diagrams but emphasize the data links between the various participants in the interaction rather than the sequence of interactions.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> An example:</p>
-                            <img src="/cs2103-website/book/modeling/modelingBehaviors/communicationDiagrams/images/diagram.png" height="300">
-                            <br>
-                            <p><sub>Adapted from: <em>UML Distilled</em> by Martin Fowler</sub></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2h]</span></span> <span class="dimmed"><strong><span>Design → Modelling → Modelling Behaviors
-                            </span></strong></span> <strong><big><big><span>State Machine Diagrams</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain state machine diagrams</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>A <em>State Machine Diagram</em> models state-dependent behavior.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Consider how a CD player responds when the “eject CD” button is pushed:</p>
-                            <ul>
-                              <li>If the CD tray is already open, it does nothing.</li>
-                              <li>If the CD tray is already in the process of opening (opened half-way), it continues to open the CD tray.</li>
-                              <li>If the CD tray is closed and the CD is being played, it stops playing and opens the CD tray.</li>
-                              <li>If the CD tray is closed and CD is not being played, it simply opens the CD tray.</li>
-                              <li>If the CD tray is already in the process of closing (closed half-way), it waits until the CD tray is fully closed and opens it immediately afterwards.</li>
-                            </ul>
-                            <p>What this means is that the CD player’s response to pushing the “eject CD” button depends on what it was doing at the time of the event. More generally, the CD player’s response to the event received depends on its internal state. Such a behavior is called a <em>state-dependent behavior</em>.</p>
-                          </tip-box>
-                          <p>Often, state-dependent behavior displayed by an object in a system is simple enough that it needs no extra attention; such a behavior can be as simple as a <em>conditional</em> behavior like <code>if x&gt;y, then x=x-y</code>.
-                            Occasionally, objects may exhibit state-dependent behavior that is complex enough such that it needs to be captured into a separate model. Such state-dependent behavior can be modelled using UML <em>state machine diagrams</em> (SMD for short, sometimes also called ‘state charts’, ‘state diagrams’ or ‘state machines’).</p>
-                          <p>An SMD views the life-cycle of an object as consisting of a finite number of states where each state displays a unique behavior pattern. An SMD captures information such as the states an object can be in, during its lifetime, and how the object responds to various events while in each state and how the object transits from one state to another. In contrast to sequence diagrams that capture object behavior one scenario at a time, SMDs capture the object’s behavior over its full life cycle.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> An SMD for the Minesweeper game.</p>
-                            <img src="/cs2103-website/book/modeling/modelingBehaviors/stateMachineDiagrams/images/minesweeper.png" height="200">
-                            <p></p>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-              <p><span id="W11-3"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W11.3]</span> <big><big><strong>Combining Multiple Test Inputs</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.3a]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                            </span></strong></span> <strong><big><big><span>Why</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the need for strategies to combine test inputs</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p><strong>An SUT can take multiple inputs.</strong> You can select values for each input (using equivalence partitioning, boundary value analysis, or some other technique).</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> an SUT that takes multiple inputs and some values chosen as values for each input:</p>
-                            <ul>
-                              <li>Method to test: <code>calculateGrade(participation, projectGrade, isAbsent, examScore)</code></li>
-                              <li>Values to test:<div class="table-responsive">
-                                  <table class="markbind-table table table-bordered table-striped">
-                                    <thead>
-                                      <tr>
-                                        <th>Input</th>
-                                        <th>valid values to test</th>
-                                        <th>invalid values to test</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>participation</td>
-                                        <td>0, 1, 19, 20</td>
-                                        <td>21, 22</td>
-                                      </tr>
-                                      <tr>
-                                        <td>projectGrade</td>
-                                        <td>A, B, C, D, F</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>isAbsent</td>
-                                        <td>true, false</td>
-                                        <td></td>
-                                      </tr>
-                                      <tr>
-                                        <td>examScore</td>
-                                        <td>0, 1, 69, 70,</td>
-                                        <td>71, 72</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                              </li>
-                            </ul>
-                          </tip-box>
-                          <p><strong>Testing all possible combinations is effective but not efficient.</strong> If you test all possible combinations for the above example, you need to test 6x5x2x6=360 cases. Doing so has a higher chance of discovering bugs (i.e. effective) but the number of test cases can be too high (i.e. not efficient). Therefore, <strong>we need smarter ways to combine test inputs that are both effective and efficient.</strong></p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.3b]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                            </span></strong></span> <strong><big><big><span>Test Input Combination Strategies</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain some basic test input combination strategies</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Given below are some basic strategies for generating a set of test cases by combining multiple test input combination strategies.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Let's assume the SUT has the following three inputs and you have selected the given values for testing:</p>
-                            <p>SUT: <code>foo(p1 char, p2 int, p3 boolean)</code></p>
-                            <p>Values to test:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Input</th>
-                                    <th style="text-align:center">Values</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">p1</td>
-                                    <td style="text-align:center">a, b, c</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">p2</td>
-                                    <td style="text-align:center">1, 2, 3</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">p3</td>
-                                    <td style="text-align:center">T, F</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p><strong>The <em>all combinations</em> strategy generates test cases for each unique combination of test inputs.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> the strategy generates 3x3x2=18 test cases</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Test Case</th>
-                                    <th style="text-align:center">p1</th>
-                                    <th style="text-align:center">p2</th>
-                                    <th style="text-align:center">p3</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">...</td>
-                                    <td style="text-align:center">...</td>
-                                    <td style="text-align:center">...</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">18</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p><strong>The <em>at least once</em> strategy includes each test input at least once.</strong></p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> this strategy generates 3 test cases.</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Test Case</th>
-                                    <th style="text-align:center">p1</th>
-                                    <th style="text-align:center">p2</th>
-                                    <th style="text-align:center">p3</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>VV/IV = Any Valid Value / Any Invalid Value</p>
-                          </tip-box>
-                          <p><strong>The <em>all pairs</em> strategy creates test cases so that for any given pair of inputs, all combinations between them are tested.</strong> It is based on the observations that a bug is rarely the result of more than two interacting factors. The resulting number of test cases is lower than the <em>all combinations</em> strategy, but higher than the <em>at least once</em> approach.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> this strategy generates 9 test cases:</p>
-                            <panel type="seamless" header="see steps">
-                              <p>Let's first consider inputs p1 and p2:</p>
-                              <div class="table-responsive">
-                                <table class="markbind-table table table-bordered table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="text-align:center">Input</th>
-                                      <th style="text-align:center">Values</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td style="text-align:center">p1</td>
-                                      <td style="text-align:center">a, b, c</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">p2</td>
-                                      <td style="text-align:center">1, 2, 3</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <p>These values can generate <tooltip content="(a,1)(a,2)(a,3)(b,1)(b,2),...">3x3=9 combinations</tooltip>, and the test cases should cover all of them.</p>
-                              <p>Next, let's consider p1 and p3.</p>
-                              <div class="table-responsive">
-                                <table class="markbind-table table table-bordered table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="text-align:center">Input</th>
-                                      <th style="text-align:center">Values</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td style="text-align:center">p1</td>
-                                      <td style="text-align:center">a, b, c</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">p3</td>
-                                      <td style="text-align:center">T, F</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <p>These values can generate <tooltip content="(a,T)(a,F)(b,T)(b,F),...">3x2=6 combinations</tooltip>, and the test cases should cover all of them.</p>
-                              <p>Similarly, inputs p2 and p3 generates another 6 combinations.</p>
-                              <p>The 9 test cases given below covers all those 9+6+6 combinations.</p>
-                            </panel>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Test Case</th>
-                                    <th style="text-align:center">p1</th>
-                                    <th style="text-align:center">p2</th>
-                                    <th style="text-align:center">p3</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">7</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">8</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">9</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p>A variation of this strategy is to test all pairs of inputs but only for inputs that could influence each other.</p>
-                          <tip-box>
-                            <p><span class="fas fa-cube"></span> Testing all pairs between p1 and p3 only while ensuring all p3 values are tested at least once</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Test Case</th>
-                                    <th style="text-align:center">p1</th>
-                                    <th style="text-align:center">p2</th>
-                                    <th style="text-align:center">p3</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">a</td>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">b</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">T</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6</td>
-                                    <td style="text-align:center">c</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">F</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p><strong>The <em>random</em> strategy generates test cases using one of the other strategies and then pick a subset randomly</strong> (presumably because the original set of test cases is too big).</p>
-                          <p><strong>There are other strategies that can be used too.</strong></p>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.3c]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                            </span></strong></span> <strong><big><big><span>Heuristic: Each Valid Input at Least Once in a Positive Test Case</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply heuristic ‘each valid input at least once in a positive test case’</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Consider the following scenario.</p>
-                          <tip-box>
-                            <p>SUT: <code>printLabel(fruitName String, unitPrice int)</code></p>
-                            <p><strong>Selected values for</strong> <code>fruitName</code> (invalid values are <ins>underlined</ins> ):</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Values</th>
-                                    <th>Explanation</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Apple</td>
-                                    <td>Label format is round</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Banana</td>
-                                    <td>Label format is oval</td>
-                                  </tr>
-                                  <tr>
-                                    <td>Cherry</td>
-                                    <td>Label format is square</td>
-                                  </tr>
-                                  <tr>
-                                    <td><ins>Dog</ins></td>
-                                    <td>Not a valid fruit</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p><strong>Selected values for</strong> <code>unitPrice</code>:</p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th>Values</th>
-                                    <th>Explanation</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>1</td>
-                                    <td>Only one digit</td>
-                                  </tr>
-                                  <tr>
-                                    <td>20</td>
-                                    <td>Two digits</td>
-                                  </tr>
-                                  <tr>
-                                    <td><ins>0</ins></td>
-                                    <td>Invalid because 0 is not a valid price</td>
-                                  </tr>
-                                  <tr>
-                                    <td><ins>-1</ins></td>
-                                    <td>Invalid because negative prices are not allowed</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p>Suppose these are the test cases being considered.</p>
-                          <tip-box>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case</th>
-                                    <th style="text-align:center">fruitName</th>
-                                    <th style="text-align:center">unitPrice</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">Apple</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">Print label</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">Banana</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">Print label</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">Cherry</td>
-                                    <td style="text-align:center"><ins>0</ins></td>
-                                    <td style="text-align:center">Error message “invalid price”</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center"><ins>Dog</ins></td>
-                                    <td style="text-align:center"><ins>-1</ins></td>
-                                    <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p>It looks like the test cases were created using the <em>at least once</em> strategy. After running these tests can we confirm that square-format label printing is done correctly?</p>
-                          <ul>
-                            <li>Answer: No.</li>
-                            <li>Reason: <code>Cherry</code> -- the only input that can produce a square-format label -- is in a negative test case which produces an error message instead of a label. If there is a bug in the code that prints labels in square-format, these tests cases will not trigger that bug.</li>
-                          </ul>
-                          <p>In this case a useful heuristic to apply is <strong>each valid input must appear at least once in a positive test case</strong>. <code>Cherry</code> is a valid test input and we must ensure that it appears at least once in a positive test case. Here are the updated test cases after applying that heuristic.</p>
-                          <tip-box>
-                            <div id="heuristic-valid-test-case">
-                              <div class="table-responsive">
-                                <table class="markbind-table table table-bordered table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="text-align:center">Case</th>
-                                      <th style="text-align:center">fruitName</th>
-                                      <th style="text-align:center">unitPrice</th>
-                                      <th style="text-align:center">Expected</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td style="text-align:center">1</td>
-                                      <td style="text-align:center">Apple</td>
-                                      <td style="text-align:center">1</td>
-                                      <td style="text-align:center">Print round label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">2</td>
-                                      <td style="text-align:center">Banana</td>
-                                      <td style="text-align:center">20</td>
-                                      <td style="text-align:center">Print oval label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">2.1</td>
-                                      <td style="text-align:center">Cherry</td>
-                                      <td style="text-align:center">VV</td>
-                                      <td style="text-align:center">Print square label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">3</td>
-                                      <td style="text-align:center">VV</td>
-                                      <td style="text-align:center"><ins>0</ins></td>
-                                      <td style="text-align:center">Error message “invalid price”</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">4</td>
-                                      <td style="text-align:center"><ins>Dog</ins></td>
-                                      <td style="text-align:center"><ins>-1</ins></td>
-                                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
-                            </div>
-                          </tip-box>
-                        </div>
-                        <div></div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.3d]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                            </span></strong></span> <strong><big><big><span>Heuristic: No More Than One Invalid Input In A Test Case</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div>
-                          <p>
-                            <panel src="/cs2103-website\book\testCaseDesign\combiningTestInputs\heuristicValid\unit-inElsewhere-asFlat._include_.html" header="%%<span class='glyphicon glyphicon-education' aria-hidden='true'></span> Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: Each Valid Input at Least Once in a Positive Test Case%%" popup-url="/cs2103-website/book/testCaseDesign/combiningTestInputs/heuristicValid"></panel>
-                          </p>
-                        </div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply heuristic ‘no more than one invalid input in a test case’</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Consider the <trigger for="modal:heuristic-valid-test-case" trigger="click">test cases designed in [Heuristic: each valid input at least once in a positive test case]</trigger>.</p>
-                          <modal large="" title="**Extract from Quality Assurance → Test Case Design → Combining Test Inputs → Heuristic: each valid input at least once in a positive test case**" id="modal:heuristic-valid-test-case">
-                            <div>
-                              <div class="table-responsive">
-                                <table class="markbind-table table table-bordered table-striped">
-                                  <thead>
-                                    <tr>
-                                      <th style="text-align:center">Case</th>
-                                      <th style="text-align:center">fruitName</th>
-                                      <th style="text-align:center">unitPrice</th>
-                                      <th style="text-align:center">Expected</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td style="text-align:center">1</td>
-                                      <td style="text-align:center">Apple</td>
-                                      <td style="text-align:center">1</td>
-                                      <td style="text-align:center">Print round label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">2</td>
-                                      <td style="text-align:center">Banana</td>
-                                      <td style="text-align:center">20</td>
-                                      <td style="text-align:center">Print oval label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">2.1</td>
-                                      <td style="text-align:center">Cherry</td>
-                                      <td style="text-align:center">VV</td>
-                                      <td style="text-align:center">Print square label</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">3</td>
-                                      <td style="text-align:center">VV</td>
-                                      <td style="text-align:center"><ins>0</ins></td>
-                                      <td style="text-align:center">Error message “invalid price”</td>
-                                    </tr>
-                                    <tr>
-                                      <td style="text-align:center">4</td>
-                                      <td style="text-align:center"><ins>Dog</ins></td>
-                                      <td style="text-align:center"><ins>-1</ins></td>
-                                      <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                              <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
-                            </div>
-                          </modal>
-                          <p>After running these test cases can you be sure that the error message “invalid price” is shown for negative prices?</p>
-                          <ul>
-                            <li>Answer: No.</li>
-                            <li>Reason: <code>-1</code> -- the only input that is a negative price -– is in a test case that produces the error message “invalid fruit”.</li>
-                          </ul>
-                          <p>In this case a useful heuristic to apply is <strong>no more than one invalid input in a test case</strong>. After applying that, we get the following test cases.</p>
-                          <tip-box>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case</th>
-                                    <th style="text-align:center">fruitName</th>
-                                    <th style="text-align:center">unitPrice</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">Apple</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">Print round label</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">Banana</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">Print oval label</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2.1</td>
-                                    <td style="text-align:center">Cherry</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">Print square label</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><ins>0</ins></td>
-                                    <td style="text-align:center">Error message “invalid price”</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><ins>-1</ins></td>
-                                    <td style="text-align:center">Error message “invalid price&quot;</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4.1</td>
-                                    <td style="text-align:center"><ins>Dog</ins></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">Error message “invalid fruit&quot;</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>VV/IV = Any Invalid or Valid Value VV=Any Valid Value</p>
-                          </tip-box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Can define test cases precisely">
-                                  <question>
-                                    <p>Applying the heuristics covered so far, we can determine the precise number of test cases required to test any given SUT effectively.</p>
-                                    <ul radio-group="a7d7f" class="radio-list">
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> True</label></li>
-                                      <li class="radio-list-item"><label><input class="radio-list-input" name="a7d7f" type="radio"> False</label></li>
-                                    </ul>
-                                    <div slot="answer">
-                                      <p>False</p>
-                                      <p>Explanation: These heuristics are, well, heuristics only. They will help you to make better decisions about test case design. However, they are speculative in nature (especially, when testing in black-box fashion) and cannot give you precise number of test cases.</p>
-                                    </div>
-                                  </question>
-                                </panel>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.3e]</span></span> <span class="dimmed"><strong><span>Quality Assurance → Test Case Design → Combining Test Inputs →
-                            </span></strong></span> <strong><big><big><span>Mix</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-                    <div>
-                      <div class="indented">
-                        <div></div>
-                        <p></p>
-                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can apply multiple test input combination techniques together</span></span></span></span></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <div>
-                          <p>Consider the calculateGrade scenario given below:</p>
-                          <tip-box>
-                            <ul>
-                              <li>SUT : <code>calculateGrade(participation, projectGrade, isAbsent, examScore)</code></li>
-                              <li>Values to test: invalid values are <ins>underlined</ins>
-                                <ul>
-                                  <li>participation: 0, 1, 19, 20, <ins>21</ins>, <ins>22</ins></li>
-                                  <li>projectGrade: A, B, C, D, F</li>
-                                  <li>isAbsent: true, false</li>
-                                  <li>examScore: 0, 1, 69, 70, <ins>71</ins>, <ins>72</ins></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </tip-box>
-                          <p>To get the first cut of test cases, let’s apply the <em>at least once</em> strategy.</p>
-                          <tip-box>
-                            <p><strong>Test cases for calculateGrade V1</strong></p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case No.</th>
-                                    <th style="text-align:center">participation</th>
-                                    <th style="text-align:center">projectGrade</th>
-                                    <th style="text-align:center">isAbsent</th>
-                                    <th style="text-align:center">examScore</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">A</td>
-                                    <td style="text-align:center">true</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">B</td>
-                                    <td style="text-align:center">false</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">19</td>
-                                    <td style="text-align:center">C</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">69</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">D</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">70</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5</td>
-                                    <td style="text-align:center"><ins>21</ins></td>
-                                    <td style="text-align:center">F</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center"><ins>71</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6</td>
-                                    <td style="text-align:center"><ins>22</ins></td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center"><ins>72</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>VV/IV = Any Valid or Invalid Value, Err Msg = Error Message</p>
-                          </tip-box>
-                          <p>Next, let’s apply the <em>each valid input at least once in a positive test case</em> heuristic. Test case 5 has a valid value for <code>projectGrade=F</code> that doesn't appear in any other positive test case. Let's replace test case 5 with 5.1 and 5.2 to rectify that.</p>
-                          <tip-box>
-                            <p><strong>Test cases for calculateGrade V2</strong></p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case No.</th>
-                                    <th style="text-align:center">participation</th>
-                                    <th style="text-align:center">projectGrade</th>
-                                    <th style="text-align:center">isAbsent</th>
-                                    <th style="text-align:center">examScore</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">A</td>
-                                    <td style="text-align:center">true</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">B</td>
-                                    <td style="text-align:center">false</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">19</td>
-                                    <td style="text-align:center">C</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">69</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">D</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">70</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>5.1</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">F</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>5.2</mark></td>
-                                    <td style="text-align:center"><ins>21</ins></td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center"><ins>71</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6</td>
-                                    <td style="text-align:center"><ins>22</ins></td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center">VV/IV</td>
-                                    <td style="text-align:center"><ins>72</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                            <p>VV = Any Valid Value VV/IV = Any Valid or Invalid Value</p>
-                          </tip-box>
-                          <p>Next, we apply the <em>no more than one invalid input in a test case</em> heuristic. Test cases 5.2 and 6 don't follow that heuristic. Let's rectify the situation as follows:</p>
-                          <tip-box>
-                            <p><strong>Test cases for calculateGrade V3</strong></p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case No.</th>
-                                    <th style="text-align:center">participation</th>
-                                    <th style="text-align:center">projectGrade</th>
-                                    <th style="text-align:center">isAbsent</th>
-                                    <th style="text-align:center">examScore</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">A</td>
-                                    <td style="text-align:center">true</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">B</td>
-                                    <td style="text-align:center">false</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">19</td>
-                                    <td style="text-align:center">C</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">69</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">D</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">70</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5.1</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">F</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5.2</td>
-                                    <td style="text-align:center"><ins>21</ins></td>
-                                    <td style="text-align:center"><mark>VV</mark></td>
-                                    <td style="text-align:center"><mark>VV</mark></td>
-                                    <td style="text-align:center"><mark>VV</mark></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>5.3</mark></td>
-                                    <td style="text-align:center"><ins>22</ins></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>6.1</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><ins>71</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>6.2</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><ins>72</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                          <p>Next, let us assume that there is a dependency between the inputs <code>examScore</code> and <code>isAbsent</code> such that an absent student can only have <code>examScore=0</code>. To cater for the hidden invalid case arising from this, we can add a new test case where <code>isAbsent=true</code> and <code>examScore!=0</code>. In addition, test cases 3-6.2 should have <code>isAbsent=false</code> so that the input remains valid.</p>
-                          <tip-box>
-                            <p><strong>Test cases for calculateGrade V4</strong></p>
-                            <div class="table-responsive">
-                              <table class="markbind-table table table-bordered table-striped">
-                                <thead>
-                                  <tr>
-                                    <th style="text-align:center">Case No.</th>
-                                    <th style="text-align:center">participation</th>
-                                    <th style="text-align:center">projectGrade</th>
-                                    <th style="text-align:center">isAbsent</th>
-                                    <th style="text-align:center">examScore</th>
-                                    <th style="text-align:center">Expected</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">A</td>
-                                    <td style="text-align:center">true</td>
-                                    <td style="text-align:center">0</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">2</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">B</td>
-                                    <td style="text-align:center">false</td>
-                                    <td style="text-align:center">1</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">3</td>
-                                    <td style="text-align:center">19</td>
-                                    <td style="text-align:center">C</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center">69</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">4</td>
-                                    <td style="text-align:center">20</td>
-                                    <td style="text-align:center">D</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center">70</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5.1</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">F</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">...</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5.2</td>
-                                    <td style="text-align:center"><ins>21</ins></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">5.3</td>
-                                    <td style="text-align:center"><ins>22</ins></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6.1</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center"><ins>71</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center">6.2</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center">VV</td>
-                                    <td style="text-align:center"><mark>false</mark></td>
-                                    <td style="text-align:center"><ins>72</ins></td>
-                                    <td style="text-align:center">Err Msg</td>
-                                  </tr>
-                                  <tr>
-                                    <td style="text-align:center"><mark>7</mark></td>
-                                    <td style="text-align:center"><mark>VV</mark></td>
-                                    <td style="text-align:center"><mark>VV</mark></td>
-                                    <td style="text-align:center"><mark>true</mark></td>
-                                    <td style="text-align:center"><mark>!=0</mark></td>
-                                    <td style="text-align:center"><mark>Err Msg</mark></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </div>
-                          </tip-box>
-                        </div>
-                        <div>
-                          <div>
-                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
-                              <div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> statements about test input combinations">
-                                    <question>
-                                      <p>Which of these contradict the heuristics recommended when creating test cases with multiple inputs?</p>
-                                      <ul radio-group="1da4e" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> a. All invalid test inputs must be tested together.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> b. It is ok to combine valid values for different inputs.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> c. No more than one invalid test input should be in a given test case.</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="1da4e" type="radio"> d. Each valid test input should appear at least once in a test case that doesn’t have any invalid inputs.</label></li>
-                                      </ul>
-                                      <div slot="answer">
-                                        <p>(a) inputs.</p>
-                                        <p>Explanation: If you test all invalid test inputs together, you will not know if each one of the invalid inputs are handled correctly by the SUT. This is because most SUTs return an error message upon encountering the first invalid input.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> test cases for `consume` method">
-                                    <question>
-                                      <p>Apply heuristics for combining multiple test inputs to improve the E&amp;E of the following test cases, assuming all 6 values in the table need to be tested. <ins>underlines</ins> indicate invalid values. Point out where the heuristics are contradicted and how to improve the test cases.</p>
-                                      <box>
-                                        <p>SUT: <code>consume(food, drink)</code></p>
-                                        <div class="table-responsive">
-                                          <table class="markbind-table table table-bordered table-striped">
-                                            <thead>
-                                              <tr>
-                                                <th>Test case</th>
-                                                <th>food</th>
-                                                <th>drink</th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td>TC1</td>
-                                                <td>bread</td>
-                                                <td>water</td>
-                                              </tr>
-                                              <tr>
-                                                <td>TC2</td>
-                                                <td>rice</td>
-                                                <td><ins>lava</ins></td>
-                                              </tr>
-                                              <tr>
-                                                <td>TC3</td>
-                                                <td><ins>rock</ins></td>
-                                                <td><ins>acid</ins></td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </div>
-                                      </box>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-              </panel>
-              <p></p>
-              <p><span id="W11-4"></span></p>
-              <panel type="seamless" no-close="" expandable="true" expanded="">
-                <span slot="header" class="card-title">
-                  <div>
-                    <p><big> <span class="dimmed">[W11.4]</span> <big><big><strong>SDLC Process Models</strong></big></big></big> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></p>
-                  </div>
-                </span>
-                <div class="indented-level1">
-                  <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4a]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1a]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
                             </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
@@ -1848,7 +128,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4b]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1b]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
                             </span></strong></span> <strong><big><big><span>Sequential Models</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
@@ -1871,7 +151,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4c]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1c]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
                             </span></strong></span> <strong><big><big><span>Iterative Models</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
                     <div>
                       <div class="indented">
@@ -1898,7 +178,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4d]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1d]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models → Introduction →
                             </span></strong></span> <strong><big><big><span>Agile Models</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -1956,7 +236,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4e]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1e]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
                             </span></strong></span> <strong><big><big><span>Scrum</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -2006,7 +286,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4f]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1f]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
                             </span></strong></span> <strong><big><big><span>XP</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -2034,7 +314,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4g]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1g]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
                             </span></strong></span> <strong><big><big><span>Unified Process</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -2151,7 +431,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4h]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1h]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
                             </span></strong></span> <strong><big><big><span>CMMI</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -2174,7 +454,7 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                   <panel type="seamless" expanded="">
-                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.4i]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.1i]</span></span> <span class="dimmed"><strong><span>Project Management → SDLC Process Models →
                             </span></strong></span> <strong><big><big><span>Recap</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
@@ -2352,6 +632,309 @@ studentList.addUi(statusUi);
                     </div>
                   </panel>
                 </div>
+              </panel>
+              <p></p>
+              <p><span id="W11-2"></span></p>
+              <panel type="seamless" no-close="" expandable="true" expanded="">
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W11.2]</span> <big><big><strong>Reuse: Frameworks, Libraries, Platforms</strong></big></big></big> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1">
+                  <br>
+                  <p><span class="dimmed"><strong>Reuse</strong></span></p>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2a]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain software reuse</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2b]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Introduction →
+                            </span></strong></span> <strong><big><big><span>When</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain the costs and benefits of reuse</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>While you may be tempted to use many libraries/frameworks/platform that seem to crop up on a regular basis and promise to bring great benefits, note that <strong>there are costs associated with reuse</strong>. Here are some:</p>
+                          <ul>
+                            <li>The reused code <strong>may be an overkill</strong> (think <em>using a sledgehammer to crack a nut</em>) increasing the size of, or/and degrading the performance of, your software.</li>
+                            <li>The reused software <strong>may not be mature/stable enough</strong> to be used in an important product. That means the software can change drastically and rapidly, possibly in ways that break your software.</li>
+                            <li>Non-mature software has the <strong>risk of dying off</strong> as fast as they emerged, leaving you with a dependency that is no longer maintained.</li>
+                            <li>The license of the reused software (or its dependencies) <strong>restrict how you can use/develop your software</strong>.</li>
+                            <li>The reused software <strong>might have bugs, missing features, or security vulnerabilities</strong> that are important to your product but not so important to the maintainers of that software, which means those flaws will not get fixed as fast as you need them to.</li>
+                            <li><strong>Malicious code can sneak into your product</strong> via compromised dependencies.</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Using a cool UI framework">
+                                  <question has-input="true">
+                                    <p>One of your teammates is proposing to use a recently-released “cool” UI framework for your class project. List the pros and cons of this idea.</p>
+                                    <div slot="answer">
+                                      <p>Pros</p>
+                                      <ul>
+                                        <li>The potential to create a much better product by reusing the framework.</li>
+                                        <li>Learning a new framework is good for the future job prospects.</li>
+                                      </ul>
+                                      <p>Cons</p>
+                                      <ul>
+                                        <li>Learning curve may be steep.</li>
+                                        <li>May not be stable (it was recently released).</li>
+                                        <li>May not allow us to do exactly what we want. While frameworks allow customization, such customization can be limited.</li>
+                                        <li>Performance penalties.</li>
+                                        <li>Might interfere with learning objectives of the module.</li>
+                                      </ul>
+                                      <p>Note that having more cons does not mean we should not use this framework. Further investigation is required before we can make a final decision.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Libraries</strong></span></p>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2c]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain libraries</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>A library is a collection of modular code that is general and can be used by other programs.</p>
+                          <tip-box>
+                            <div class="alt-java">
+                              <p><span class="fas fa-cube"></span> Java classes you get with the JDK (such as <code>String</code>, <code>ArrayList</code>, <code>HashMap</code>, etc.) are library classes that are provided in the default Java distribution.</p>
+                              <p><span class="fas fa-cube"></span> <a href="https://github.com/joestelmach/natty">Natty</a> is a Java library that can be used for parsing strings that represent dates e.g. <code>The 31st of April in the year 2008</code></p>
+                            </div>
+                            <div class="alt-python">
+                              <p><span class="fas fa-cube"></span> built-in modules you get with Python (such as <code>csv</code>, <code>random</code>, <code>sys</code>, etc.) are libraries that are provided in the default Python distribution. Classes such as <code>list</code>, <code>str</code>, <code>dict</code> are built-in library classes that you get with Python.</p>
+                              <p><span class="fas fa-cube"></span> <a href="https://pypi.python.org/pypi/colorama">Colorama</a> is a Python library that can be used for colorizing text in a CLI.</p>
+                            </div>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2d]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Libraries →
+                            </span></strong></span> <strong><big><big><span>How</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can make use of a library</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>These are the typical steps required to use a library.</p>
+                          <ol>
+                            <li>Read the documentation to confirm that its functionality fits your needs</li>
+                            <li>Check the license to confirm that it allows reuse in the way you plan to reuse it. For example, some libraries might allow non-commercial use only.</li>
+                            <li>Download the library and make it accessible to your project. Alternatively, you can configure your <tooltip content="e.g. _Gradle_ (for Java) and _Pipenv_ (for Python)">dependency management tool</tooltip> to do it for you.</li>
+                            <li>Call the library API from your code where you need to use the library functionality.</li>
+                          </ol>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Frameworks</strong></span></p>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2e]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-warning"><span style="color:white"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain frameworks</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>The overall structure and execution flow of a specific category of software systems can be very similar. The similarity is an opportunity to reuse at a high scale.</strong></p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Running example:</p>
+                            <p>IDEs for different programming languages are similar in how they support editing code, organizing project files, debugging, etc.</p>
+                          </tip-box>
+                          <p><strong>A <em>software framework</em> is a reusable implementation of a software (or part thereof) providing <em>generic</em> functionality that can be selectively customized to produce a <em>specific</em> application.</strong></p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Running example:</p>
+                            <p>Eclipse is an IDE framework that can be used to create IDEs for different programming languages.</p>
+                          </tip-box>
+                          <p><strong>Some frameworks provide a complete implementation of a <em>default</em> behavior which makes them immediately usable.</strong></p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Running example:</p>
+                            <p>Eclipse is a fully functional Java IDE out-of-the-box.</p>
+                          </tip-box>
+                          <p><strong>A framework facilitates the adaptation and customization of some desired functionality.</strong></p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Running example:</p>
+                            <p>Eclipse plugin system can be used to create an IDE for different programming languages while reusing most of the existing IDE features of Eclipse. E.g. <a href="https://marketplace.eclipse.org/content/pydev-python-ide-eclipse">https://marketplace.eclipse.org/content/pydev-python-ide-eclipse</a></p>
+                          </tip-box>
+                          <p>Some frameworks cover only a specific components or an aspect.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> JavaFx a framework for creating Java GUIs. TkInter is a GUI framework for Python.</p>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> More examples of frameworks</p>
+                            <ul>
+                              <li>Frameworks for Web-based applications: Drupal(PHP), Django(Python), Ruby on Rails (Ruby), Spring (Java)</li>
+                              <li>Frameworks for testing: JUnit (Java), unittest (Python), Jest (Java Script)</li>
+                            </ul>
+                          </tip-box>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2f]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Frameworks →
+                            </span></strong></span> <strong><big><big><span>Frameworks vs Libraries</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can differentiate between frameworks and libraries</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p>Although both frameworks and libraries are reuse mechanisms, there are notable differences:</p>
+                          <ul>
+                            <li>
+                              <p><strong>Libraries are meant to be used ‘as is’ while frameworks are meant to be customized/extended.</strong>
+                                <span class="dimmed"> e.g., writing plugins for Eclipse so that it can be used as an IDE for different languages (C++, PHP, etc.), adding modules and themes to Drupal, and adding test cases to JUnit</span>.</p>
+                            </li>
+                            <li>
+                              <p><strong>Your code calls the library code while the framework code calls your code.</strong>
+                                <strong>Frameworks use a technique called <em>inversion of control</em>, aka the “Hollywood principle”</strong> (i.e. don’t call us, we’ll call you!). That is, you write code that will be called by the framework, <span class="dimmed"> e.g. writing test methods that will be called by the JUnit framework.</span> In the case of libraries, your code calls libraries.</p>
+                            </li>
+                          </ul>
+                        </div>
+                        <div>
+                          <div>
+                            <panel header="<span class='fas fa-dumbbell'></span> Exercises" expandable="">
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Statement about software frameworks">
+                                  <question>
+                                    <p>Choose correct statements about software frameworks.</p>
+                                    <ul class="task-list">
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> a. They follow the hollywood principle, otherwise known as ‘inversion of control’</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> b. They come with full or partial implementation.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> c. They are more concrete than patterns or principles.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> d. They are often configurable.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> e. They are reuse mechanisms.</li>
+                                      <li class="task-list-item"><input class="task-list-item-checkbox" type="checkbox"> f. They are similar to reusable libraries but bigger.</li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
+                                      <p>Explanation: While both libraries and frameworks are reuse mechanisms, and both more concrete than principles and patterns, libraries differ from frameworks in some key ways. One of them is the ‘inversion of control’ used by frameworks but not libraries. Furthermore, frameworks do not have to be bigger than libraries all the time.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                              <div>
+                                <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span><span class='glyphicon glyphicon-ok-sign' aria-hidden='true'></span> Which are frameworks?">
+                                  <question>
+                                    <p>Which one of these are frameworks ?</p>
+                                    <ul radio-group="58823" class="radio-list">
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> a. JUnit</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> b. Eclipse</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> c. Drupal</label></li>
+                                      <li class="radio-list-item"><label><input class="radio-list-input" name="58823" type="radio"> d. Ruby on Rails</label></li>
+                                    </ul>
+                                    <div slot="answer">
+                                      <p>(a)(b)(c)(d)</p>
+                                      <p>Explanation: These are frameworks.</p>
+                                    </div>
+                                  </question>
+                                </panel>
+                              </div>
+                            </panel>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </panel>
+                  <br>
+                  <p><span class="dimmed"><strong>Platforms</strong></span></p>
+                  <panel type="seamless" expanded="">
+                    <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W11.2g]</span></span> <span class="dimmed"><strong><span>Implementation → Reuse → Platforms →
+                            </span></strong></span> <strong><big><big><span>What</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                    <div>
+                      <div class="indented">
+                        <div></div>
+                        <p></p>
+                        <p><span class="badge badge-light"><span><span class="dimmed"><span><span class="fas fa-trophy"></span> Can explain platforms</span></span></span></span></p>
+                        <p></p>
+                        <p></p>
+                        <p></p>
+                        <div>
+                          <p><strong>A <em>platform</em> provides a runtime environment for applications.</strong> A platform is often bundled with various libraries, tools, frameworks, and technologies in addition to a runtime environment but the defining characteristic of a software platform is the presence of a runtime environment.</p>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> Technically, an operating system can be called a platform. For example, Windows PC is a platform for desktop applications while iOS is a platform for mobile apps.</p>
+                          </tip-box>
+                          <tip-box>
+                            <p><span class="fas fa-cube"></span> <strong>Two well-known examples of platforms are JavaEE and .NET</strong>, both of which sit above Operating systems layer, and are used to develop <trigger for="modal:enterprise-application" trigger="click">enterprise applications</trigger>. Infrastructure services such as connection pooling, load balancing, remote code execution, transaction management, authentication, security, messaging etc. are done similarly in most enterprise applications. Both JavaEE and .NET provide these services to applications in a customizable way without developers having to implement them from scratch every time.</p>
+                            <ul>
+                              <li>JavaEE (Java Enterprise Edition) is both a framework and a platform for writing enterprise applications. The runtime used by the JavaEE applications is the JVM (Java Virtual Machine) that can run on different Operating Systems.</li>
+                              <li>.NET is a similar platform and a framework. Its runtime is called CLR (Common Language Runtime) and usually used on Windows machines.</li>
+                            </ul>
+                          </tip-box>
+                          <modal title="**Enterprise Applications**" id="modal:enterprise-application">
+                            <div>
+                              <p><strong>Enterprise Application</strong>: ‘enterprise applications’ means software applications used at organizations level and therefore has to meet much higher demands (such as in scalability, security, performance, and robustness) than software meant for individual use.</p>
+                            </div>
+                          </modal>
+                        </div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </panel>
+                </div>
+              </panel>
+              <p></p>
+              <p><span id="W11-3"></span></p>
+              <panel type="seamless" no-close="" expandable="true" expanded="">
+                <span slot="header" class="card-title">
+                  <div>
+                    <p><big> <span class="dimmed">[W11.3]</span> <big><big><strong>Tips &amp; tricks for demo</strong></big></big></big> <span class="badge badge-pill badge-secondary"><span class="glyphicon glyphicon-education" aria-hidden="true"></span><span class="glyphicon glyphicon-education" aria-hidden="true"></span></span></p>
+                  </div>
+                </span>
+                <div class="indented-level1"></div>
               </panel>
               <p></p>
             </div>
@@ -4204,7 +2787,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Fri, 22 Feb 2019 04:57:55 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Wed, 27 Feb 2019 10:53:22 GMT</small></div>
 </footer>
 </div>
 </body>
