@@ -3831,62 +3831,45 @@ Enter side 1:
       <tab header="<span class='fas fa-chalkboard-teacher'></span> Tutorial">
         <div>
           <p><strong>Questions to discuss during tutorial:</strong></p>
-          <p>Whole team: do this question together, using the whiteboard:</p>
-          <div class="indented">
-            <div>
-              <panel header="<span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span> Model workflow of Burger shop">
-                <question>
-                  <p>Draw an activity diagram to represent the following workflow a burger shop uses when processing an order by a customer.</p>
-                  <ul>
-                    <li>First, a cashier takes the order.</li>
-                    <li>Then, three workers start preparing the order at the same time; one prepares the drinks, one prepares the burgers, and one prepares the desserts.</li>
-                    <li>In the meantime, the customer pays for the order. If the customer has a voucher, she pays using the voucher; otherwise she pays using cash.</li>
-                    <li>After paying, the customer collects the food after all three parts of the order are ready.</li>
-                  </ul>
-                  <panel type="seamless" header="Example Activity Diagram" minimized="">
-                    <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Activity_conducting.svg"><br>
-                      <sub>[<a href="https://en.wikipedia.org/wiki/Activity_diagram">source:wikipeida</a>]</sub></p>
-                  </panel>
-                </question>
-              </panel>
-            </div>
-          </div>
-          <br>
-          <p>Divide these five questions among team members. Be prepared to answer questions allocated to you.</p>
+          <p>Divide these questions among team members. Be prepared to answer questions allocated to you.</p>
           <p><strong>Q1</strong></p>
           <ol>
-            <li>What’s the use of assertions?</li>
-            <li>Demonstrate an assertion failure using Intellij.</li>
-            <li>What’s the purpose of logging levels? What are the available logging levels in AB4?</li>
+            <li>What is <em>unit/integration/system/acceptance</em> testing?</li>
+            <li>How is each one done in AB4?</li>
+            <li>What’s the difference between <em>unit testing</em> and <em>integration testing</em>?</li>
+            <li>What’s the difference between <em>system testing</em> and <em>acceptance testing</em>?</li>
           </ol>
           <p><strong>Q2</strong></p>
-          <ol>
-            <li>What is <em>Liskov Substitution Principle</em>?<br>
-              Give an example from the project where LSP is followed and explain how to change the code to break LSP.</li>
-          </ol>
-          <p><strong>Q3</strong></p>
-          <ol>
-            <li>What is <em>defensive programming</em>?<br>
-              Give an example of defensive programming from your project.</li>
-          </ol>
-          <p><strong>Q4</strong></p>
           <ol>
             <li>What’s the difference between <em>validation</em> and <em>verification</em>?<br>
               Acceptance tests are validation tests or verification tests?</li>
             <li>Give an example of <em>static analysis</em> being used in Intellij</li>
           </ol>
-          <p><strong>Q5</strong></p>
+          <p><strong>Q3</strong></p>
           <ol>
-            <li>Explain how <em>Law of Demeter</em> affects coupling<br>
-              a. Add a line to this code that violates LoD
-              <pre><code class="hljs java"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">foo</span><span class="hljs-params">(P p)</span></span>{
-    <span class="hljs-comment">//...</span>
-}
+            <li>Explain and justify: <em>testing should be efficient and effective</em></li>
+            <li>Explain how <em>exploratory</em> and <em>scripted</em> testing is used in AB4/project</li>
+            <li>Give an example of a <em>negative</em> test case in AB4/project</li>
+            <li>Explain <em>grey-box</em> test case design</li>
+          </ol>
+          <p><strong>Q4</strong></p>
+          <ol>
+            <li>Explain: <em>Equivalence Partition</em> improve E&amp;E of testing</li>
+            <li>What are the EPs for the parameter <code>day</code> of this method
+              <pre><code class="hljs java"><span class="hljs-comment">/**
+ * Returns true if the three values represent a valid day
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">boolean</span> <span class="hljs-title">isValidDay</span><span class="hljs-params">(<span class="hljs-keyword">int</span> year, <span class="hljs-keyword">int</span> month, <span class="hljs-keyword">int</span> day)</span></span>{
+
+} 
 </code></pre>
             </li>
-            <li>Give an example in the project code that violates the <em>Law of Demeter</em>.</li>
-            <li>What’s the problem with the architecture diagram on the right?<br>
-              <img src="/cs2103-website/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190"><br></li>
+          </ol>
+          <p><strong>Q5</strong></p>
+          <ol>
+            <li>Explain: <em>Boundary Value Analysis</em> improves E&amp;E of testing</li>
+            <li>What are the boundary values for the parameter <code>day</code> in the question above?</li>
+            <li>How can EP and BVA heuristics be used in AB4/project? Hint: See [<a href="https://github.com/nus-cs2103-AY1819S2/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-test-case-design-heuristics-code-lo-testcasedesignheuristics-code">AB4 Learning Outcomes: LO-TestCaseDesignHeuristics</a>]</li>
           </ol>
           <p><strong>Q6</strong></p>
           <div>
@@ -4208,7 +4191,7 @@ Enter side 1:
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Wed, 27 Feb 2019 10:53:22 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.1</a> at Wed, 27 Feb 2019 11:13:05 GMT</small></div>
 </footer>
 </div>
 </body>
