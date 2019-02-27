@@ -14,32 +14,28 @@ Divide these questions among team members and get ready to answer them.
 1. What's the relationship between an OODM and a class diagram for a software? %%e.g., exactly the same?, one is a sub-set of the other?%%
 1. Which diagram can we use to show ~~class~~object structures in a problem domain?
 
+
 **Q2**
-1. Explain and justify: _testing should be efficient and effective_
-1. Explain how _exploratory_ and _scripted_ testing is used in AB4/project
-1. Give an example of a _negative_ test case in AB4/project
-1. Explain _grey-box_ test case design
-
-**Q3**
-1. Explain: _Equivalence Partition_ improve E&E of testing
-1. What are the EPs for the parameter `day` of this method
-   ```java
-   /**
-    * Returns true if the three values represent a valid day
-    */
-   boolean isValidDay(int year, int month, int day){
-   
-   } 
-   ```
-
-**Q4**
-1. Explain: _Boundary Value Analysis_ improves E&E of testing
-1. What are the boundary values for the parameter `day` in the question above?
-1. How can EP and BVA heuristics be used in AB4/project? Hint: See [[AB4 Learning Outcomes: LO-TestCaseDesignHeuristics]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-test-case-design-heuristics-code-lo-testcasedesignheuristics-code)]
-
-**Q5**
 1. What’s a _design pattern_?
 1. When do you use the _Singleton_ pattern, _Facade_ pattern, _Command_ pattern?
 1. Which of the three patterns are used in AB4? Hint: See [[AB4 Learning Outcomes: LO-DesignPatterns]({{module_org}}/addressbook-level4/blob/master/docs/LearningOutcomes.adoc#apply-design-patterns-code-lo-designpatterns-code)]
+1. When do you use _MVC_ pattern? Do we have MVC in AB4?
+1. When do you use the _Observer_ pattern? Do we have the Observer pattern in AB4?
 
 
+**Q3**
+1. What is _Liskov Substitution Principle_?<br>
+   Give an example from the project where LSP is followed and explain how to change the code to break LSP.
+
+
+**Q4**
+1. Explain how _Law of Demeter_ affects coupling<br>
+   a. Add a line to this code that violates LoD
+   ```java
+   void foo(P p){
+       //...
+   }
+   ```
+1. Give an example in the project code that violates the _Law of Demeter_.
+1. What’s the problem with the architecture diagram on the right?<br>
+   <img src="{{baseUrl}}/book/architecture/architectureDiagrams/drawing/images/tip.png" height="190" /><br>

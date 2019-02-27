@@ -418,7 +418,6 @@ head: scheduleHead.md
     {name: "Requirements"},
        {heading: "OO Domain Models"},
          {location: ["modeling", "modelingStructures", "objectOrientedDomainModels"], omit_evidence: true},
-    {name: "Design"},
          {heading: "Activity Diagrams"},
               {location: ["modeling", "modelingBehaviors", "activityDiagrams"]},
               {location: ["modeling", "modelingBehaviors", "activityDiagramsIntermediate"], omit_evidence: true},

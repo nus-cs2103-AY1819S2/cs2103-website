@@ -76,7 +76,6 @@ head: scheduleHead.md
       {location: ["codeQuality", "followStandard", "introduction"]},
       {location: ["codeQuality", "followStandard", "basic"]},
       {location: ["codeQuality", "followStandard", "intermediate"]},
-  index.md
   {name: "Documentation"},
     {heading: "Documentation Tools"},
       {subheading: "Javadoc"},

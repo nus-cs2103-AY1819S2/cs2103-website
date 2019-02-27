@@ -1,4 +1,4 @@
-**Questions to discuss during tutorial:** Divide these five questions among team members. Be prepared to answer questions allocated to you.
+**Questions to discuss during tutorial:** Divide these questions among team members. Be prepared to answer questions allocated to you.
 
 **Q1**
 1. Explain what Gradle is. How is it used in AB4?
@@ -29,7 +29,10 @@
 1. Does the project follow OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?
 
 **Q5**
-1. What is _unit/integration/system/acceptance_ testing?
-1. How is each one done in AB4?
-1. What’s the difference between _unit testing_ and _integration testing_?
-1. What’s the difference between _system testing_ and _acceptance testing_?
+1. What’s the use of assertions?
+1. Demonstrate an assertion failure using Intellij.
+1. What’s the purpose of logging levels? What are the available logging levels in AB4?
+
+**Q6**
+1. What is _defensive programming_?<br>
+   Give an example of defensive programming from your project.
