@@ -1,13 +1,7 @@
 **Questions to discuss during tutorial:**
 
-Whole team: do this question together, using the whiteboard:
 
-<div class="indented">
-  <include src="../../book/modeling/modelingBehaviors/activityDiagrams/q-modelWorkflowOfBurgerShop.md" />
-</div>
-<br>
-
-Divide these five questions among team members. Be prepared to answer questions allocated to you.
+Divide these questions among team members. Be prepared to answer questions allocated to you.
 
 **Q1**
 1. What is _unit/integration/system/acceptance_ testing?
