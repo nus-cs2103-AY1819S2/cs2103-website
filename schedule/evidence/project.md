@@ -146,9 +146,6 @@ Covered by the 'Product' component of v1.1:
 
 No textbook section. To be covered during the lecture.
 
-{{ evidence }}
-
-Apply the discussed guidelines when designing the product (covered by v1.1 deliverables).
 
 </div>
 
@@ -221,3 +218,9 @@ Covered by the 'Demo' component of v1.4:
 <panel src="../../admin/project-w13-v14.md#main" header="%%Admin {{ icon_embedding }} Project → v1.4%%" />
 
 </div>
+
+<div id="testing">
+
+Covered in class.
+</div>
+
