@@ -15,3 +15,9 @@
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-essay-expainParserFactory.md" />
 <include src="../../book/modeling/modelingBehaviors/sequenceDiagramsIntermediate/q-drawPrintQuoteSd.md" />
 
+<panel header="{{ icon_Q }} Project scheduling and tracking">
+<question>
+
+1. What’s the difference between _buffers_ and _padding/inflating_ estimates?
+</question>
+</panel>
