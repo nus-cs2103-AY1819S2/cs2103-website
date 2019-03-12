@@ -1,6 +1,7 @@
 **Questions to discuss during tutorial:**
 
 Whole team: do this question together, using the whiteboard:
+
 **Q1**
 <div class="indented">
   <include src="../../book/modeling/modelingStructures/objectOrientedDomainModels/q-courseDomainModel.md" />
