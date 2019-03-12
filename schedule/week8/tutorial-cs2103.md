@@ -1,14 +1,6 @@
 **Questions to discuss during tutorial:** Divide these questions among team members. Be prepared to answer questions allocated to you.
 
 **Q1**
-1. Explain what Gradle is. How is it used in AB4?
-1. Explain what Travis is. How is it used in AB4?
-1. Which integration approach is used by the project?
-1. What is test coverage? How is it used in AB4?
-1. How to measure coverage in Intellij?
-1. How do you ensure some clean up code is run after each JUnit test case?
-
-**Q2**
 1. What is abstraction? How is it used in the project?
 1. What is coupling?
    1. `Foo` depends on `Bar` if …?
@@ -16,22 +8,22 @@
 1. What is cohesion?
 1. How does cohesion relates to coupling?
 
-**Q3**
+**Q2**
 1. What is the Principle of SoC?
 1. How does SoC relate to coupling and cohesion?
 1. What is SRP?
 1. How does SRP relate to SoC?
 
-**Q4**
+**Q3**
 1. What is OCP?
 1. Explain several different ways of achieving OCP
 1. Does the project follow OCP? E.g. Can we add a new command or a new storage type without modifying existing code too much?
 
-**Q5**
+**Q4**
 1. What’s the use of assertions?
 1. Demonstrate an assertion failure using Intellij.
 1. What’s the purpose of logging levels? What are the available logging levels in AB4?
 
-**Q6**
+**Q5**
 1. What is _defensive programming_?<br>
    Give an example of defensive programming from your project.
