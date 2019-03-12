@@ -1,0 +1,30 @@
+2019-03-01T09:17:39.186Z - info: Website generation started at 5:17:37 PM
+2019-03-01T09:17:40.152Z - info: Building assets...
+2019-03-01T09:17:41.040Z - info: Assets built
+2019-03-01T09:17:41.041Z - info: Generating pages...
+2019-03-01T09:18:59.611Z - info: Pages built
+2019-03-01T09:18:59.642Z - info: Site data built
+2019-03-01T09:18:59.642Z - info: Website generation complete! Total build time: 82.163s
+2019-03-01T09:18:59.661Z - info: Generate Site durationMs=82182
+2019-03-01T09:18:59.685Z - info: Serving "D:\Teaching\CS2103\cs2103-website\_site" at http://127.0.0.1:8080
+2019-03-01T09:18:59.687Z - info: Press CTRL+C to stop ...
+2019-03-01T09:23:17.900Z - info: [5:23:17 PM] Reload for file change: D:\Teaching\CS2103\cs2103-website\admin\reposenseConfigTemplates.md
+2019-03-01T09:23:18.903Z - verbose: Rebuild affected paths: D:\Teaching\CS2103\cs2103-website\admin\reposenseConfigTemplates.md
+2019-03-01T09:23:18.906Z - info: Rebuilding 1 pages
+2019-03-01T09:23:18.972Z - info: Pages rebuilt
+2019-03-01T09:23:18.976Z - info: Site data built
+2019-03-01T09:24:13.763Z - info: [5:24:13 PM] Reload for file change: D:\Teaching\CS2103\cs2103-website\admin\reposenseConfigTemplates.md
+2019-03-01T09:24:14.766Z - verbose: Rebuild affected paths: D:\Teaching\CS2103\cs2103-website\admin\reposenseConfigTemplates.md
+2019-03-01T09:24:14.769Z - info: Rebuilding 1 pages
+2019-03-01T09:24:14.948Z - info: Pages rebuilt
+2019-03-01T09:24:14.960Z - info: Site data built
+2019-03-01T09:25:27.131Z - info: Website generation started at 5:25:26 PM
+2019-03-01T09:25:27.838Z - info: Building assets...
+2019-03-01T09:25:29.008Z - info: Assets built
+2019-03-01T09:25:29.010Z - info: Generating pages...
+2019-03-01T09:26:54.383Z - info: Pages built
+2019-03-01T09:26:54.418Z - info: Site data built
+2019-03-01T09:26:54.418Z - info: Website generation complete! Total build time: 87.982s
+2019-03-01T09:26:54.420Z - info: Build success!
+2019-03-01T09:26:54.420Z - info: Generate Site durationMs=87984
+2019-03-01T09:27:52.121Z - info: Deployed!

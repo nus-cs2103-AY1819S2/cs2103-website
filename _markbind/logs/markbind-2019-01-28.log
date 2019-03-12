@@ -1,0 +1,36 @@
+2019-01-28T15:39:52.217Z - info: Website generation started at 11:39:44 PM
+2019-01-28T15:39:56.918Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\book\_markbind\variables.md'
+2019-01-28T15:39:56.921Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\_markbind\variables.md'
+2019-01-28T15:39:57.022Z - info: Building assets...
+2019-01-28T15:40:01.170Z - info: Assets built
+2019-01-28T15:40:01.171Z - info: Generating pages...
+2019-01-28T15:42:22.471Z - info: Pages built
+2019-01-28T15:42:22.698Z - info: Site data built
+2019-01-28T15:42:22.700Z - info: Website generation complete! Total build time: 157.72s
+2019-01-28T15:42:22.730Z - info: Generate Site durationMs=157751
+2019-01-28T15:42:25.041Z - info: Serving "D:\Teaching\CS2103\cs2103-website\_site" at http://127.0.0.1:59890
+2019-01-28T15:42:25.041Z - info: Press CTRL+C to stop ...
+2019-01-28T15:45:56.806Z - info: Website generation started at 11:45:49 PM
+2019-01-28T15:46:01.397Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\book\_markbind\variables.md'
+2019-01-28T15:46:01.400Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\_markbind\variables.md'
+2019-01-28T15:46:01.560Z - info: Building assets...
+2019-01-28T15:46:05.598Z - info: Assets built
+2019-01-28T15:46:05.599Z - info: Generating pages...
+2019-01-28T15:48:37.831Z - info: Website generation started at 11:48:27 PM
+2019-01-28T15:48:42.489Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\book\_markbind\variables.md'
+2019-01-28T15:48:42.493Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\_markbind\variables.md'
+2019-01-28T15:48:42.606Z - info: Building assets...
+2019-01-28T15:48:46.678Z - info: Assets built
+2019-01-28T15:48:46.679Z - info: Generating pages...
+2019-01-28T15:50:51.248Z - info: Pages built
+2019-01-28T15:50:51.471Z - info: Site data built
+2019-01-28T15:50:51.472Z - info: Website generation complete! Total build time: 144.356s
+2019-01-28T15:50:51.472Z - info: Build success!
+2019-01-28T15:50:51.473Z - info: Generate Site durationMs=144357
+2019-01-28T15:53:09.246Z - info: Deployed!
+2019-01-28T15:59:27.277Z - info: Website generation started at 11:59:20 PM
+2019-01-28T15:59:32.055Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\book\_markbind\variables.md'
+2019-01-28T15:59:32.060Z - warn: ENOENT: no such file or directory, open 'D:\Teaching\CS2103\cs2103-website\schedule\week4\_site\_markbind\variables.md'
+2019-01-28T15:59:32.209Z - info: Building assets...
+2019-01-28T15:59:36.553Z - info: Assets built
+2019-01-28T15:59:36.554Z - info: Generating pages...
