@@ -23,7 +23,7 @@ head: scheduleHead.md
 ] %}
 
 
-{% set current_weeks = ["8", "9"] %}
+{% set current_weeks = ["10"] %}
 
 
 {% set all_outcomes = [
@@ -343,7 +343,7 @@ head: scheduleHead.md
            {location: ["testing", "testingTypes", "acceptanceTesting", "acceptanceVsSystemTesting"]},
          {subheading: "Alpha/Beta Testing"},
            {location: ["testing", "testingTypes", "alphaBetaTesting", "what"]},
-       {heading: "Testing: Intermediate Techniques"},
+       {heading: "Testing: Coverage"},
          {location: ["testing", "introduction", "testability"], omit_evidence: true},
          {location: ["testing", "testCoverage", "what"]},
          {location: ["testing", "testCoverage", "how"]},
