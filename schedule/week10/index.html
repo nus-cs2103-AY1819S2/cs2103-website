@@ -39,9 +39,9 @@
         <li><a href="/cs2103-website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Feb 11] </span></a></li>
         <li><a href="/cs2103-website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Feb 18] </span></a></li>
         <li><a href="/cs2103-website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Mar 4] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] <span class="fas fa-arrow-circle-left"></span></span></a></li>
+        <li><a href="/cs2103-website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Mar 11] </span></a></li>
         <li><a href="/cs2103-website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Mar 18] </span></a></li>
-        <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] </span></a></li>
+        <li><a href="/cs2103-website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Mar 25] <span class="fas fa-arrow-circle-left"></span></span></a></li>
         <li><a href="/cs2103-website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Apr 1] </span></a></li>
         <li><a href="/cs2103-website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Apr 8] </span></a></li>
         <li><a href="/cs2103-website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Apr 15] </span></a></li>
@@ -80,7 +80,76 @@
     <h1 id="week-10-%5Bmar-25%5D">Week 10 <small><small><span class="dimmed">[Mar 25]</span></small></small><a class="fa fa-anchor" href="#week-10-%5Bmar-25%5D"></a></h1>
     <tabs>
       <tab header="<span class='fas fa-bell'></span> Notices">
-        <div></div>
+        <div>
+          <h2 id="reposense">RepoSense<a class="fa fa-anchor" href="#reposense"></a></h2>
+          <ul>
+            <li>
+              <p>We use a new tool called <code>RepoSense</code> to identify your contributions to the project.</p>
+              <ul>
+                <li>The tool is setup for the module and the report is available under the <a href="https://nus-cs2103-ay1819s2.github.io/cs2103-dashboard">project-dashboard link</a>.</li>
+              </ul>
+            </li>
+            <li>
+              <p>Ensure your code is RepoSense compatible. <a href="https://nus-cs2103-AY1819S2.github.io/cs2103-website/admin/project-w10-mid-v13.html#ensuring-your-code-is-reposense-compatible">Instructions here</a>.</p>
+            </li>
+            <li>
+              <p>Follow the <a href="https://github.com/reposense/RepoSense/blob/release/docs/UserGuide.md">user guide for RepoSense</a> and fix the issues, if you don't see your contributions detected.</p>
+            </li>
+          </ul>
+          <h3 id="faq%3A">FAQ:<a class="fa fa-anchor" href="#faq%3A"></a></h3>
+          <ol>
+            <li>
+              <p>My contributions are not detected in the Reposense report, why?</p>
+              <ol>
+                <li>Check:
+                  <ol>
+                    <li>Have you set the <code>user.name</code> to your GitHub user name that you provided in the premodule survey?</li>
+                    <li>Have you used different git user name while doing the work? Run <code>git log</code> command on the command line/terminal and look for the <code>Author</code> field.</li>
+                  </ol>
+                </li>
+                <li>If the above are correct, you may want to provide a config file to give additional details to Reposense (check the Reposense documentation mentioned above)
+                  <ol>
+                    <li>You need to commit the config file before running Reposense, else the config won't be picked up by the tool.</li>
+                  </ol>
+                </li>
+                <li>Do note: <em>if you include a config file, entries pertaining to all members of the team must be in the config file</em>.</li>
+              </ol>
+            </li>
+            <li>
+              <p>I have done everything given in 1, but I still can't see my contributions. How to resolve?</p>
+              <ol>
+                <li>Use <code>@@author</code> tags to identify your code contribution in the source files.</li>
+                <li>Follow the instructions given in the Reposense documentation for this</li>
+              </ol>
+            </li>
+            <li>
+              <p>I did 1 &amp; 2, however, I cannot still see my contributions. Help!!</p>
+              <ol>
+                <li>Usually, most cases will be taken care of by 1 and 2 above.</li>
+                <li>In case your contributions are still not detected, please post the issue on this forum, we will get the reposense team to take a look.</li>
+              </ol>
+            </li>
+            <li>
+              <p>How frequently is the Reposense report generated?</p>
+              <ol>
+                <li>Reposense is configured to run the report every Monday. i.e., the report is generated weekly.</li>
+              </ol>
+            </li>
+            <li>
+              <p>My friend and I worked on a piece of code together, but only my friend committed. Now how?</p>
+              <ol>
+                <li>Use <code>@@author</code> tags to indicate chunks of the file that is your contribution. Arrive at a consensus with your friend/teammate before claiming part of the code as yours.</li>
+              </ol>
+            </li>
+            <li>
+              <p>What is considered <strong>good contribution</strong>?</p>
+              <ol>
+                <li>Speaking from code-quality evaluation perspective, you need to have contiguous code chunks in your contribution (e.g., some full classes, some significantly long full methods).</li>
+                <li>If the code is fragmented (e.g., you only added one additional field to a class, and entire code has fragmented one-two lines that work with the additional field you creates) it becomes hard to grade the code quality.</li>
+              </ol>
+            </li>
+          </ol>
+        </div>
       </tab>
       <tab header="<span class='fas fa-trophy'></span> Topics">
         <div>
@@ -705,7 +774,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </panel>
                   <panel type="seamless" expanded="">
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W10.1f]</span></span> <span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span> <strong><big><big><span>Interface Segregation Principle</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                            </span></strong></span> <strong><big><big><span>Interface Segregation Principle</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
@@ -747,7 +816,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </panel>
                   <panel type="seamless" expanded="">
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W10.1g]</span></span> <span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span> <strong><big><big><span>Dependency Inversion Principle</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                            </span></strong></span> <strong><big><big><span>Dependency Inversion Principle</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
@@ -803,7 +872,7 @@ AcademicStaff academicStaff = staff; <span class="hljs-comment">// Not OK</span>
                   </panel>
                   <panel type="seamless" expanded="">
                     <span slot="header" class="card-title"><span><span class="badge badge-pill badge-light"><span class="dimmed">[W10.1h]</span></span> <span class="dimmed"><strong><span>Supplmentary → Principles →
-                            </span></strong></span> <strong><big><big><span>SOLID Principles</span></big></big></strong></span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+                            </span></strong></span> <strong><big><big><span>SOLID Principles</span></big></big></strong></span> <span class="badge badge-pill badge-info"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
                     <div>
                       <div class="indented">
                         <div></div>
@@ -3391,7 +3460,7 @@ method 2 ...
 <div id="flex-div"></div>
 <footer>
   <div class="text-center">
-    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Fri, 15 Mar 2019 07:37:14 GMT</small></div>
+    <small>This site was built with <a href="https://markbind.github.io/markbind/">MarkBind 1.16.0</a> at Fri, 22 Mar 2019 04:42:08 GMT</small></div>
 </footer>
 </div>
 </body>
