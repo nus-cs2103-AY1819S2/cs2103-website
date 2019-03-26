@@ -1,4 +1,4 @@
-**A. One member do a quick demo of your v1.3 using the jar file** (preferably a different member from previous weeks):
+**A. Two members do a quick demo of your v1.3 using the jar file.**
 
 **B. Divide these questions among team members and get ready to answer them.**
 
