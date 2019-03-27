@@ -12,7 +12,7 @@
 ## (Mock) Submissions this week
 
 * Submit the following documents on LumiNUS.
-  * Ensure that the file names are accurate. While there is no penalty now for non-compliance, you will lose marks for making similar mistakes in the final submission.
+  * Ensure that the file names are accurate. There is penalty for non-complying with the requirements for v1.4 submission (final submission).
 * ==The submission folder `Milestone v1.3 submission ` will be open from April 1, 2019 12:00 am to April 2, 2019 11:59 pm==
 
 Team/Individual Item | Name format | Upload to
