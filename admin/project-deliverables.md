@@ -230,9 +230,8 @@ At the end of the project each student is required to submit a _Project Portfoli
 <include src="project-testing.mbdf#testingPreparations" />
 
 **During the session**:
-1. **Take note of your team to test**. Distributed via LumiNUS gradebook and via email.
+1. **Take note of your team to test**. Distributed via LumiNUS gradebook.
 1. Download the latest jar file from the team's GitHub page. ==Copy it to an empty folder==.
-1. Confirm you are testing the allocated product by comparing the product UI with the UI screenshot sent via email.
 
 <div id="project-deliverables-pe-testing-intructions">
 <box>
@@ -261,12 +260,51 @@ At the end of the project each student is required to submit a _Project Portfoli
 * **Bug report format**:
   * {{ icon_important_big_red }} Post bugs as you find them %%(i.e., do not wait to post all bugs at the end)%% because the issue tracker will close exactly at the end of the allocated time.
   * ==Do not use team ID in bug reports==. %%Reason: to prevent others copying your bug reports%%
-  * Each bug should be a separate issue.
   * Write good quality bug reports; ==poor quality or incorrect bug reports will not earn credit==.
   * Use a descriptive title.
   * Give a good description of the bug with ==steps to reproduce and screenshots==.
   * Assign a severity to the bug report. Bug report without a priority label are considered `severity.Low` (lower severity bugs earn lower credit):
+  * Each bug should be a separate issue. The issue will be initialized with one of the following templates:
+---
+  **Bug report**
+ 
+  
+  **Describe the bug**
+  A clear and concise description of what the bug is.
+  
+  **To Reproduce**
+  Steps to reproduce the behavior:
+  1. Go to '...'
+  2. Click on '....'
+  3. Scroll down to '....'
+  4. See error
+  
+  **Expected behavior**
+  A clear and concise description of what you expected to happen.
+  
+  **Screenshots**
+  If applicable, add screenshots to help explain your problem.
+  
+  **Additional context**
+  Add any other context about the problem here.
+  
+ --------
+  **Suggestions for improving the product**
 
+
+  
+  **Please describe the problem**
+  A clear and concise description of what the problem is. Eg. I have to scroll three times to find [...]
+  
+  **Describe the improvement you'd like to suggest**
+  A clear and concise description of what you want to happen. Eg., Better to sort based on [...] for quick access
+  
+  **Additional context**
+  Add any other context or screenshots about the feature request here.
+  
+  -----------
+  
+ 
 <div class="indented-level4">
 <include src="appendixE-gitHub.md#bug-severity" />
 </div>
@@ -301,7 +339,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 * As a bonus, PE also gives us an opportunity to evaluate your manual testing skills, product evaluation skills, effort estimation skills etc.
 * Note that the PE is not a means of _pitting you against each other_. Developers and testers play for the same side; they need to push each other to improve the quality of their work -- not bring down each other.
 
-**When, where**: Week 13 lecture
+**When, where**: Week 13 lecture 
 
 {{ icon_important_big_red }} **Grading**:
 * Your performance in the practical exam will affect your final grade and your peers, as explained in [_Admin: Project Assessment_]({{ baseUrl }}/admin/project-assessment.html) section.

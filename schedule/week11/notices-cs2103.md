@@ -20,3 +20,8 @@ Team/Individual Item | Name format | Upload to
 {{ icon_team }} User Guide | `[TEAM_ID][product Name]UserGuide.pdf`<br>  %%e.g.[W09-1][Contacts Plus]UserGuide.pdf%% | LumiNUS
 {{ icon_team }} Developer Guide | `[TEAM_ID][product Name]DeveloperGuide.pdf`<br> %%e.g. [W09-1][Contacts Plus]DeveloperGuide.pdf%% | LumiNUS
 {{ icon_individual }} Project Portfolio Page | `[TEAM_ID][Your Name]Portfolio.pdf`<br> %%e.g.[W09-1][John Doe]Portfolio.pdf%%<br>html version of PPP page on the product website | LumiNUS<br><br>github.io
+
+##  PE Dry-run
+**Time/venue:** week 11, 5 Apr, 2pm at the lecture
+
+<include src="../../admin/project-deliverables.md#project-deliverables-practicalexam-dry-run" />
