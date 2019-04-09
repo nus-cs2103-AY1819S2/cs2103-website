@@ -170,7 +170,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 ### Deliverable: Demo
 <span id="project-deliverables-demo">
 
-* **Duration:** Strictly 18 minutes for a 5-person team and 15 minutes for a 4-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
+* **Duration:** Strictly 18 minutes for a 5-person team, 15 minutes for a 4-person team, and 12 minutes for a 3-person team. Exceeding this limit will be penalized. Any set up time will be taken out of your allocated time.
 
 * **Target audience**: Assume you are giving a demo to a higher-level manager of your company, to brief him/her on the current capabilities of the product. This is the first time they are seeing the new product you developed but they are familiar with the AddressBook-level4 (AB4) product. The actual audience are the evaluators (the team supervisor and another tutor).
 
