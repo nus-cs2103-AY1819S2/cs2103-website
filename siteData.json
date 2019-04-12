@@ -2,8 +2,20 @@
   "pages": [
     {
       "headings": {
-        "week-12-%5Bapr-8%5D": "Week 12 [Apr 8]",
-        "project-milestone%3A-mid-v1.4": "Project Milestone: mid-v1.4"
+        "week-13-%5Bapr-15%5D": "Week 13 [Apr 15]",
+        "v1.4-project-deadline%3A-mon%2C-15-apr%2C-23%3A59": "v1.4 Project Deadline: Mon, 15 Apr, 23:59",
+        "v1.4-project-demo-during-tutorial": "v1.4 Project Demo during tutorial",
+        "practical-exam-(pe)": "Practical Exam (PE)",
+        "project-milestone%3A-v1.4": "Project Milestone: v1.4",
+        "v1.4-product": "v1.4 Product",
+        "v1.4-source-code": "v1.4 Source Code",
+        "v1.4-user-guide": "v1.4 User Guide",
+        "v1.4-developer-guide": "v1.4 Developer Guide",
+        "v1.4-project-portfolio-page-(ppp)": "v1.4 Project Portfolio Page (PPP)",
+        "v1.4-product-website": "v1.4 Product Website",
+        "v1.4-demo": "v1.4 Demo",
+        "v1.4-practical-exam": "v1.4 Practical Exam",
+        "v1.4-demo-2": "v1.4 Demo"
       },
       "title": "Home",
       "footer": "footer.md",
