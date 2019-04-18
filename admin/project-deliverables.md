@@ -388,7 +388,7 @@ At the end of the project each student is required to submit a _Project Portfoli
 
 There will be a review period for you to respond to the [bug reports]({{module_org}}/pe-results/issues) you received.
 
-Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Wednesday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
+Duration: The review period will start around 1 day after the PE (exact time to be announced) and will last until the following **Monday midnight**. However, you are recommended to finish this task ASAP, to minimize cutting into your exam preparation work.
 
 Bug reviewing is recommended to be done as a team as some of the decisions need team consensus.
 
